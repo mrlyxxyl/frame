@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>${title}</title>
+</head>
+<body>
+content is ${content}<br/>
+number is ${number}<br/>
+
+date is ${time?date}<br/>
+time is ${time?time}<br/>
+datetime is ${time?datetime}<br/>
+datetime is ${time?string("yyyy-MM-dd HH:mm:ss")}
+
+<!--time为long类型毫秒值的转括号加叹号为屏蔽null值-->
+datetime is ${(1489388281864?number_to_datetime)!}
+
+<#list list as obj>
+    <li>${obj}</li>
+</#list>
+${array}<br/>
+直接输出list中的第二个数据 ${list[1]}<br/>
+直接输出array中的第二个数据 ${array[3]}<br/>
+
+<#list map ? keys as key>
+    <li>${key} ------ ${map[key]}</li>
+</#list>
+<br/>
+<br/>
+<br/>
+
+${answer}<br/>
+${answer ? string}<br/>
+${answer ? string.number}<br/>
+${answer ? string.currency}<br/>
+${answer ? string.percent}<br/>
+
+
+${bool ? string("yes","no")}<br/>
+
+${"我的文件保存在C:\\盘"}<br/>
+${'我名字是\"annlee\"'}<br/>
+${r"C:\foo\bar"} <br/>
+
+
+<#list ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期天"] as x>
+    ${x},
+</#list>
+<br/>
+
+<#list [2 + 2, 9 * 9, "whatnot"] as y>
+    ${y},
+</#list>
+<br/>
+<#list 2..9 as a>
+    ${a},
+</#list>
+<br/>
+<#list 9..2 as b>
+    ${b},
+</#list>
+
+<br/>
+
+<#list {"语文":78, "数学":80} ? keys as k>
+    ${k} ----> ${map[k]}<br/>
+</#list>
+
+<br/>
+<br/>
+<br/>
+-------------------------------
+${root.user.id}<br/>
+${root.user.name}<br/>
+${root.user.age}<br/>
+
+${sex +  address}<br/>
+${"hello, ${sex}!"}<br/>
+-------------------------------
+
+${1 == 1}<br/>
+
+--------------------<br/>
+${content?html}<br/>
+${content?cap_first}<br/>
+${content?lower_case}<br/>
+${content?upper_case}<br/>
+${content?trim}<br/>
+
+
+---------------------<br/>
+<#if (age > 60)>老年人</#if>
+<br/>
+<#noparse>
+    ${name}
+</#noparse>
+</body>
+</html>
