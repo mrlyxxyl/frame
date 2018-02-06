@@ -49,21 +49,6 @@
         <url-pattern>*.do</url-pattern>
     </filter-mapping>
 
-    <!--错误页面全局配置-->
-    <error-page>
-        <error-code>500</error-code>
-        <location>/error-page/500.jsp</location>
-    </error-page>
-    <error-page>
-        <error-code>403</error-code>
-        <location>/error-page/403.jsp</location>
-    </error-page>
-    <error-page>
-        <error-code>404</error-code>
-        <location>/error-page/404.jsp</location>
-    </error-page>
-    <!--错误页面全局配置-->
-
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>

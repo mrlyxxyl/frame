@@ -1,245 +1,94 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="baseUrl" value="${pageContext.request.contextPath}"/>
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>框架</title>
-    <link rel="stylesheet" href="${baseUrl}/assets/css/amazeui.css"/>
-    <link rel="stylesheet" href="${baseUrl}/assets/css/core.css"/>
-    <link rel="stylesheet" href="${baseUrl}/assets/css/menu.css"/>
-    <link rel="stylesheet" href="${baseUrl}/assets/css/index.css"/>
-    <link rel="stylesheet" href="${baseUrl}/assets/css/admin.css"/>
-    <link rel="stylesheet" href="${baseUrl}/assets/css/page/typography.css"/>
-    <link rel="stylesheet" href="${baseUrl}/assets/css/page/form.css"/>
-    <link rel="stylesheet" href="${baseUrl}/assets/css/component.css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>无标题文档</title>
+    <link href="${baseUrl}/css/style.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="${baseUrl}/js/jquery.js"></script>
 
 </head>
+
+
 <body>
-<header class="am-topbar am-topbar-fixed-top">
-    <div class="am-topbar-left am-hide-sm-only" style="background-color: #EBEFF2;">
-        <a href="${baseUrl}/admin/index.do" class="logo"><span>框架<span></span></span><i class="zmdi zmdi-layers"></i></a>
-    </div>
 
-    <div class="contain">
-        <ul class="am-nav am-navbar-nav am-navbar-left">
-            <li><h4 class="page-title">站点统计</h4></li>
-        </ul>
-
-        <ul class="am-nav am-navbar-nav am-navbar-right">
-            <li class="inform"><i class="am-icon-bell-o" aria-hidden="true"></i></li>
-            <li class="hidden-xs am-hide-sm-only">
-                <form role="search" class="app-search">
-                    <input type="text" placeholder="Search..." class="form-control">
-                    <a href=""><img src="${baseUrl}/assets/img/search.png"></a>
-                </form>
-            </li>
-        </ul>
-    </div>
-</header>
-
-<div class="admin">
-
-    <jsp:include page="nav.jsp"/>
-
-    <div class="content-page">
-        <div class="content">
-            <div class="am-g">
-                <div class="am-u-md-3">
-                    <div class="card-box">
-                        <h4 class="header-title m-t-0 m-b-30">注册人数</h4>
-
-                        <div class="widget-chart-1 am-cf">
-                            <div class="widget-detail-1" style="float: left;">
-                                <h2 class="p-t-10 m-b-0"></h2>
-
-                                <p class="text-muted">今日注册</p>
-                            </div>
-
-                            <div class="widget-detail-1" style="float: right;">
-                                <h2 class="p-t-10 m-b-0"></h2>
-
-                                <p class="text-muted">累计注册</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="am-u-md-3">
-                    <div class="card-box">
-                        <h4 class="header-title m-t-0 m-b-30">主播认证</h4>
-
-                        <div class="widget-chart-1 am-cf">
-                            <div class="widget-detail-1" style="float: left;">
-                                <h2 class="p-t-10 m-b-0"></h2>
-
-                                <p class="text-muted">今日认证</p>
-                            </div>
-
-                            <div class="widget-detail-1" style="float: right;">
-                                <h2 class="p-t-10 m-b-0"></h2>
-
-                                <p class="text-muted">累计认证</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="am-u-md-3">
-                    <div class="card-box">
-                        <h4 class="header-title m-t-0 m-b-30">充值笔数</h4>
-
-                        <div class="widget-chart-1 am-cf">
-                            <div class="widget-detail-1" style="float: left;">
-                                <h2 class="p-t-10 m-b-0"></h2>
-
-                                <p class="text-muted">今日充值</p>
-                            </div>
-
-                            <div class="widget-detail-1" style="float: right;">
-                                <h2 class="p-t-10 m-b-0"></h2>
-
-                                <p class="text-muted">累计充值</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="am-u-md-3">
-                    <div class="card-box">
-                        <h4 class="header-title m-t-0 m-b-30">充值金额</h4>
-
-                        <div class="widget-chart-1 am-cf">
-                            <div class="widget-detail-1" style="float: left;">
-                                <h2 class="p-t-10 m-b-0"></h2>
-
-                                <p class="text-muted">今日充值</p>
-                            </div>
-
-                            <div class="widget-detail-1" style="float: right;">
-                                <h2 class="p-t-10 m-b-0"></h2>
-
-                                <p class="text-muted">累计充值</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="am-u-md-3">
-                    <div class="card-box">
-                        <h4 class="header-title m-t-0 m-b-30">提现笔数</h4>
-
-                        <div class="widget-chart-1 am-cf">
-                            <div class="widget-detail-1" style="float: left;">
-                                <h2 class="p-t-10 m-b-0"></h2>
-
-                                <p class="text-muted">今日提现</p>
-                            </div>
-
-                            <div class="widget-detail-1" style="float: right;">
-                                <h2 class="p-t-10 m-b-0"></h2>
-
-                                <p class="text-muted">累计提现</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="am-u-md-3">
-                    <div class="card-box">
-                        <h4 class="header-title m-t-0 m-b-30">提现金额</h4>
-
-                        <div class="widget-chart-1 am-cf">
-                            <div class="widget-detail-1" style="float: left;">
-                                <h2 class="p-t-10 m-b-0"></h2>
-
-                                <p class="text-muted">今日提现</p>
-                            </div>
-
-                            <div class="widget-detail-1" style="float: right;">
-                                <h2 class="p-t-10 m-b-0"></h2>
-
-                                <p class="text-muted">累计提现</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="am-g">
-                <div class="am-u-md-3">
-                    <div class="card-box widget-user">
-                        <div>
-                            <img src="${baseUrl}/assets/img/avatar-3.jpg" class="img-responsive img-circle" alt="user">
-
-                            <div class="wid-u-info">
-                                <h4 class="m-t-0 m-b-5 font-600">Mr Lee</h4>
-
-                                <p class="text-muted m-b-5 font-13">coderthemes@gmail.com</p>
-                                <small class="text-warning"><b>管理员</b></small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="am-u-md-3">
-                    <div class="card-box widget-user">
-                        <div>
-                            <img src="${baseUrl}/assets/img/avatar-2.jpg" class="img-responsive img-circle" alt="user">
-
-                            <div class="wid-u-info">
-                                <h4 class="m-t-0 m-b-5 font-600">Mr Lee</h4>
-
-                                <p class="text-muted m-b-5 font-13">coderthemes@gmail.com</p>
-                                <small class="text-custom"><b>网络组主管</b></small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="am-u-md-3">
-                    <div class="card-box widget-user">
-                        <div>
-                            <img src="${baseUrl}/assets/img/avatar-4.jpg" class="img-responsive img-circle" alt="user"/>
-
-                            <div class="wid-u-info">
-                                <h4 class="m-t-0 m-b-5 font-600">Mr Xia</h4>
-
-                                <p class="text-muted m-b-5 font-13">coderthemes@gmail.com</p>
-                                <small class="text-success"><b>设计师</b></small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="am-u-md-3">
-                    <div class="card-box widget-user">
-                        <div>
-                            <img src="${baseUrl}/assets/img/avatar-10.jpg" class="img-responsive img-circle" alt="user"/>
-
-                            <div class="wid-u-info">
-                                <h4 class="m-t-0 m-b-5 font-600">Mr Wang</h4>
-
-                                <p class="text-muted m-b-5 font-13">coderthemes@gmail.com</p>
-                                <small class="text-info"><b>开发者</b></small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <jsp:include page="footer.jsp"/>
-        </div>
-    </div>
-</div>
+<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+        <li><a href="#">首页</a></li>
+    </ul>
 </div>
 
-<a href="admin-offcanvas" class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu" data-am-offcanvas="{target: '#admin-offcanvas'}"><!--<i class="fa fa-bars" aria-hidden="true"></i>--></a>
+<div class="mainindex">
 
-<script type="text/javascript" src="${baseUrl}/assets/js/jquery-2.1.0.js"></script>
-<script type="text/javascript" src="${baseUrl}/assets/js/amazeui.min.js"></script>
-<script type="text/javascript" src="${baseUrl}/assets/js/app.js"></script>
-<script type="text/javascript" src="${baseUrl}/assets/js/blockUI.js"></script>
-<script type="text/javascript" src="${baseUrl}/assets/js/charts/echarts.min.js"></script>
-<script type="text/javascript" src="${baseUrl}/assets/js/charts/indexChart.js"></script>
+
+    <div class="welinfo">
+        <span><img src="${baseUrl}/images/sun.png" alt="天气"/></span>
+        <b>Admin早上好，欢迎使用信息管理系统</b>
+        <a href="#">帐号设置</a>
+    </div>
+
+    <div class="welinfo">
+        <span><img src="${baseUrl}/images/time.png" alt="时间"/></span>
+        <i>您上次登录的时间：2013-10-09 15:22</i> （不是您登录的？<a href="#">请点这里</a>）
+    </div>
+
+    <div class="xline"></div>
+
+    <ul class="iconlist">
+
+        <li><img src="${baseUrl}/images/ico01.png"/>
+
+            <p><a href="#">管理设置</a></p></li>
+        <li><img src="${baseUrl}/images/ico02.png"/>
+
+            <p><a href="#">发布文章</a></p></li>
+        <li><img src="${baseUrl}/images/ico03.png"/>
+
+            <p><a href="#">数据统计</a></p></li>
+        <li><img src="${baseUrl}/images/ico04.png"/>
+
+            <p><a href="#">文件上传</a></p></li>
+        <li><img src="${baseUrl}/images/ico05.png"/>
+
+            <p><a href="#">目录管理</a></p></li>
+        <li><img src="${baseUrl}/images/ico06.png"/>
+
+            <p><a href="#">查询</a></p></li>
+
+    </ul>
+
+    <div class="ibox"><a class="ibtn"><img src="${baseUrl}/images/iadd.png"/>添加新的快捷功能</a></div>
+
+    <div class="xline"></div>
+    <div class="box"></div>
+
+    <div class="welinfo">
+        <span><img src="${baseUrl}/images/dp.png" alt="提醒"/></span>
+        <b>信息管理系统使用指南</b>
+    </div>
+
+    <ul class="infolist">
+        <li><span>您可以快速进行文章发布管理操作</span><a class="ibtn">发布或管理文章</a></li>
+        <li><span>您可以快速发布产品</span><a class="ibtn">发布或管理产品</a></li>
+        <li><span>您可以进行密码修改、账户设置等操作</span><a class="ibtn">账户管理</a></li>
+    </ul>
+
+    <div class="xline"></div>
+
+    <div class="info"><b>查看网站使用指南，您可以了解到多种风格的B/S后台管理界面,软件界面设计，图标设计，手机界面等相关信息</b>(More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>)</div>
+
+    <ul class="umlist">
+        <li><a href="#">如何发布文章</a></li>
+        <li><a href="#">如何访问网站</a></li>
+        <li><a href="#">如何管理广告</a></li>
+        <li><a href="#">后台用户设置(权限)</a></li>
+        <li><a href="#">系统设置</a></li>
+    </ul>
+
+
+</div>
 </body>
 </html>

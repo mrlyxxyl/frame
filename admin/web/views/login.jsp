@@ -1,59 +1,62 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+﻿<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="baseUrl" value="${pageContext.request.contextPath}"/>
-
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="${baseUrl}/assets/css/core.css"/>
-    <link rel="stylesheet" href="${baseUrl}/assets/css/menu.css"/>
-    <link rel="stylesheet" href="${baseUrl}/assets/css/amazeui.css"/>
-    <link rel="stylesheet" href="${baseUrl}/assets/css/component.css"/>
-    <link rel="stylesheet" href="${baseUrl}/assets/css/page/form.css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>欢迎登录后台管理系统--模板之家 www.cssmoban.com</title>
+    <link href="${baseUrl}/css/style.css" rel="stylesheet" type="text/css"/>
+    <script language="JavaScript" src="${baseUrl}/js/jquery.js"></script>
+    <script src="${baseUrl}/js/cloud.js" type="text/javascript"></script>
+
+    <script language="javascript">
+        $(function () {
+            $('.loginbox').css({'position': 'absolute', 'left': ($(window).width() - 692) / 2});
+            $(window).resize(function () {
+                $('.loginbox').css({'position': 'absolute', 'left': ($(window).width() - 692) / 2});
+            })
+        });
+    </script>
+
 </head>
-<body>
-<div class="account-pages">
-    <div class="wrapper-page">
-        <div class="text-center">
-            <a href="#" class="logo"><span>Million Dreams<span></span></span></a>
-        </div>
 
-        <div class="m-t-40 card-box">
-            <div class="text-center">
-                <h4 class="text-uppercase font-bold m-b-0">Sign In</h4>
-            </div>
-            <div class="panel-body">
-                <form action="login.do" method="post" class="am-form">
-                    <div class="am-g">
-                        <div class="am-form-group">
-                            <input type="text" name="username" class="am-radius" placeholder="username">
-                        </div>
+<body style="background-color:#1c77ac; background-image:url(${baseUrl}/images/light.png); background-repeat:no-repeat; background-position:center top; overflow:hidden;">
 
-                        <div class="am-form-group form-horizontal m-t-20">
-                            <input type="password" name="password" class="am-radius" placeholder="password">
-                        </div>
 
-                        <div class="am-form-group">
-                            <label style="font-weight: normal;color: #999;">
-                                <input type="checkbox" class="remember"> Remember me
-                            </label>
-                        </div>
-
-                        <div class="am-form-group ">
-                            <button type="submit" class="am-btn am-btn-primary am-radius" style="width: 100%;height: 100%;">LOGIN IN</button>
-                        </div>
-
-                        <div class="am-form-group ">
-                            <a href="#" class="text-muted"><i class="fa fa-lock m-r-5"></i> Forgot password?</a>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+<div id="mainBody">
+    <div id="cloud1" class="cloud"></div>
+    <div id="cloud2" class="cloud"></div>
 </div>
+
+
+<div class="logintop">
+    <span>欢迎登录后台管理界面平台</span>
+    <ul>
+        <li><a href="#">回首页</a></li>
+        <li><a href="#">帮助</a></li>
+        <li><a href="#">关于</a></li>
+    </ul>
+</div>
+
+<div class="loginbody">
+
+    <span class="systemlogo"></span>
+
+    <div class="loginbox">
+
+        <ul>
+            <li><input name="" type="text" class="loginuser" value="admin" onclick="JavaScript:this.value=''"/></li>
+            <li><input name="" type="text" class="loginpwd" value="密码" onclick="JavaScript:this.value=''"/></li>
+            <li><input name="" type="button" class="loginbtn" value="登录" onclick="javascript:window.location='${baseUrl}/main.html'"/><label><input name="" type="checkbox" value="" checked="checked"/>记住密码</label><label><a href="#">忘记密码？</a></label></li>
+        </ul>
+
+
+    </div>
+
+</div>
+
+
+<div class="loginbm">版权所有 2013 .com 仅供学习交流，勿用于任何商业用途</div>
 </body>
 </html>
