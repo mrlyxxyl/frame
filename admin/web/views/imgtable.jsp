@@ -34,12 +34,9 @@
             $(".cancel").click(function () {
                 $(".tip").fadeOut(100);
             });
-
         });
     </script>
 </head>
-
-
 <body>
 
 <div class="place">
@@ -60,15 +57,10 @@
             <li><span><img src="${baseUrl}/images/t03.png"/></span>删除</li>
             <li><span><img src="${baseUrl}/images/t04.png"/></span>统计</li>
         </ul>
-
-
         <ul class="toolbar1">
             <li><span><img src="${baseUrl}/images/t05.png"/></span>设置</li>
         </ul>
-
     </div>
-
-
     <table class="imgtable">
 
         <thead>
@@ -82,9 +74,7 @@
             <th>点击</th>
         </tr>
         </thead>
-
         <tbody>
-
         <tr>
             <td class="imgtd"><img src="${baseUrl}/images/img11.png"/></td>
             <td><a href="#">非常不错的国外后台模板，支持HTML5</a>
@@ -144,11 +134,8 @@
             <td>已审核</td>
             <td>45</td>
         </tr>
-
         </tbody>
-
     </table>
-
 
     <div class="pagin">
         <div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
@@ -164,8 +151,6 @@
             <li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
         </ul>
     </div>
-
-
     <div class="tip">
         <div class="tiptop"><span>提示信息</span><a></a></div>
 
@@ -182,10 +167,7 @@
             <input name="" type="button" class="sure" value="确定"/>&nbsp;
             <input name="" type="button" class="cancel" value="取消"/>
         </div>
-
     </div>
-
-
 </div>
 
 <div class="tip">
@@ -204,7 +186,6 @@
         <input name="" type="button" class="sure" value="确定"/>&nbsp;
         <input name="" type="button" class="cancel" value="取消"/>
     </div>
-
 </div>
 
 <script type="text/javascript">

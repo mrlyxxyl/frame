@@ -8,12 +8,8 @@
     <title>无标题文档</title>
     <link href="${baseUrl}/css/style.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="${baseUrl}/js/jquery.js"></script>
-
 </head>
-
-
 <body>
-
 <div class="place">
     <span>位置：</span>
     <ul class="placeul">
@@ -22,10 +18,7 @@
         <li><a href="#">列表</a></li>
     </ul>
 </div>
-
-
 <table class="filetable">
-
     <thead>
     <tr>
         <th width="25%">名称</th>
@@ -135,8 +128,6 @@
     </tr>
 
     </tbody>
-
-
 </table>
 </body>
 </html>

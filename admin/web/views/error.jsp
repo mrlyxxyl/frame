@@ -17,13 +17,8 @@
             })
         });
     </script>
-
-
 </head>
-
-
 <body style="background:#edf6fa;">
-
 <div class="place">
     <span>位置：</span>
     <ul class="placeul">
@@ -39,7 +34,6 @@
     <p>看到这个提示，就自认倒霉吧!</p>
 
     <div class="reindex"><a href="${baseUrl}/main.html" target="_parent">返回首页</a></div>
-
 </div>
 </body>
 </html>

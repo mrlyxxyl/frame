@@ -31,8 +31,6 @@
         <li><label>文章内容</label><textarea name="" cols="" rows="" class="textinput"></textarea></li>
         <li><label>&nbsp;</label><input name="" type="button" class="btn" value="确认保存"/></li>
     </ul>
-
-
 </div>
 </body>
 </html>

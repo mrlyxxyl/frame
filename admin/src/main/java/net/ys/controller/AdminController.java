@@ -28,7 +28,7 @@ public class AdminController {
         if (admin != null) {
             session.setAttribute("admin", admin);
         }
-        return "redirect:index.do";
+        return "redirect:/main/main.do";
     }
 
     @RequestMapping(value = "index")

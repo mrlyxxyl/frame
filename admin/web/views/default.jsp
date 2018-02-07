@@ -29,8 +29,6 @@
         });
     </script>
 </head>
-
-
 <body>
 
 <div class="place">
@@ -41,15 +39,11 @@
     </ul>
 </div>
 
-
 <div class="mainbox">
 
     <div class="mainleft">
-
-
         <div class="leftinfo">
             <div class="listtitle"><a href="#" class="more1">更多</a>数据统计</div>
-
             <div class="maintj">
                 <table id='myTable5'>
                     <caption>.com players count</caption>
@@ -89,14 +83,9 @@
                     </tbody>
                 </table>
             </div>
-
         </div>
         <!--leftinfo end-->
-
-
         <div class="leftinfos">
-
-
             <div class="infoleft">
 
                 <div class="listtitle"><a href="#" class="more1">更多</a>待办事项</div>
@@ -109,50 +98,44 @@
                     <li><a href="#">中央巡视组：重庆对一把手监督不到位</a><b>10-04</b></li>
                     <li><a href="#">囧!悍马没改好成华丽马车(图)</a><b>10-03</b></li>
                 </ul>
-
             </div>
-
-
             <div class="inforight">
                 <div class="listtitle"><a href="#" class="more1">添加</a>常用工具</div>
-
                 <ul class="tooli">
                     <li><span><img src="${baseUrl}/images/d01.png"/></span>
 
-                        <p><a href="#">信息资料</a></p></li>
+                        <p><a href="#">信息资料</a></p>
+                    </li>
                     <li><span><img src="${baseUrl}/images/d02.png"/></span>
 
-                        <p><a href="#">编辑</a></p></li>
+                        <p><a href="#">编辑</a></p>
+                    </li>
                     <li><span><img src="${baseUrl}/images/d03.png"/></span>
 
-                        <p><a href="#">记事本</a></p></li>
+                        <p><a href="#">记事本</a></p>
+                    </li>
                     <li><span><img src="${baseUrl}/images/d04.png"/></span>
 
-                        <p><a href="#">任务日历</a></p></li>
+                        <p><a href="#">任务日历</a></p>
+                    </li>
                     <li><span><img src="${baseUrl}/images/d05.png"/></span>
 
-                        <p><a href="#">图片管理</a></p></li>
+                        <p><a href="#">图片管理</a></p>
+                    </li>
                     <li><span><img src="${baseUrl}/images/d06.png"/></span>
 
-                        <p><a href="#">交易</a></p></li>
+                        <p><a href="#">交易</a></p>
+                    </li>
                     <li><span><img src="${baseUrl}/images/d07.png"/></span>
 
-                        <p><a href="#">档案袋</a></p></li>
+                        <p><a href="#">档案袋</a></p>
+                    </li>
                 </ul>
-
             </div>
-
-
         </div>
-
-
     </div>
     <!--mainleft end-->
-
-
     <div class="mainright">
-
-
         <div class="dflist">
             <div class="listtitle"><a href="#" class="more1">更多</a>最新信息</div>
             <ul class="newlist">
@@ -167,8 +150,6 @@
                 <li><a href="#">香港环境局长吁民众支持政府扩建堆填区</a></li>
             </ul>
         </div>
-
-
         <div class="dflist1">
             <div class="listtitle"><a href="#" class="more1">更多</a>信息统计</div>
             <ul class="newlist">
@@ -179,15 +160,9 @@
                 <li><i>评论数：</i>5342</li>
             </ul>
         </div>
-
-
     </div>
     <!--mainright end-->
-
-
 </div>
-
-
 </body>
 <script type="text/javascript">
     setWidth();

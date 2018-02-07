@@ -18,10 +18,7 @@
             })
         })
     </script>
-
 </head>
-
-
 <body>
 
 <div class="place">
@@ -104,11 +101,7 @@
             <p>2 MB 空间,共 53 个文件</p>
         </div>
     </li>
-
-
 </ul>
-
-
 <div class="comtitle">
     <span><img src="${baseUrl}/images/clist.png"/></span>
 
@@ -116,7 +109,6 @@
 
     <div class="rline"></div>
 </div>
-
 
 <ul class="disklist">
     <li>

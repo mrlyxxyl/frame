@@ -28,8 +28,6 @@
             });
         })
     </script>
-
-
 </head>
 
 <body style="background:#f0f9fd;">
@@ -54,8 +52,6 @@
             <li><cite></cite><a href="${baseUrl}/error.html" target="rightFrame">404页面</a><i></i></li>
         </ul>
     </dd>
-
-
     <dd>
         <div class="title">
             <span><img src="${baseUrl}/images/leftico02.png"/></span>其他设置
@@ -66,8 +62,6 @@
             <li><cite></cite><a href="#">档案列表显示</a><i></i></li>
         </ul>
     </dd>
-
-
     <dd>
         <div class="title"><span><img src="${baseUrl}/images/leftico03.png"/></span>编辑器</div>
         <ul class="menuson">
@@ -77,8 +71,6 @@
             <li><cite></cite><a href="#">其他</a><i></i></li>
         </ul>
     </dd>
-
-
     <dd>
         <div class="title"><span><img src="${baseUrl}/images/leftico04.png"/></span>日期管理</div>
         <ul class="menuson">
@@ -87,9 +79,7 @@
             <li><cite></cite><a href="#">信息列表</a><i></i></li>
             <li><cite></cite><a href="#">其他</a><i></i></li>
         </ul>
-
     </dd>
-
 </dl>
 </body>
 </html>

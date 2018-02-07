@@ -17,8 +17,6 @@
             })
         })
     </script>
-
-
 </head>
 
 <body style="background:url(${baseUrl}/images/topbg.gif) repeat-x;">
@@ -54,13 +52,11 @@
         <li><a href="#">关于</a></li>
         <li><a href="login.html" target="_parent">退出</a></li>
     </ul>
-
     <div class="user">
         <span>admin</span>
         <i>消息</i>
         <b>5</b>
     </div>
-
 </div>
 </body>
 </html>

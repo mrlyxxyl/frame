@@ -8,10 +8,7 @@
     <title>无标题文档</title>
     <link href="${baseUrl}/css/style.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="${baseUrl}/js/jquery.js"></script>
-
 </head>
-
-
 <body>
 
 <div class="place">
@@ -22,7 +19,6 @@
 </div>
 
 <div class="mainindex">
-
 
     <div class="welinfo">
         <span><img src="${baseUrl}/images/sun.png" alt="天气"/></span>
@@ -41,23 +37,28 @@
 
         <li><img src="${baseUrl}/images/ico01.png"/>
 
-            <p><a href="#">管理设置</a></p></li>
+            <p><a href="#">管理设置</a></p>
+        </li>
         <li><img src="${baseUrl}/images/ico02.png"/>
 
-            <p><a href="#">发布文章</a></p></li>
+            <p><a href="#">发布文章</a></p>
+        </li>
         <li><img src="${baseUrl}/images/ico03.png"/>
 
-            <p><a href="#">数据统计</a></p></li>
+            <p><a href="#">数据统计</a></p>
+        </li>
         <li><img src="${baseUrl}/images/ico04.png"/>
 
-            <p><a href="#">文件上传</a></p></li>
+            <p><a href="#">文件上传</a></p>
+        </li>
         <li><img src="${baseUrl}/images/ico05.png"/>
 
-            <p><a href="#">目录管理</a></p></li>
+            <p><a href="#">目录管理</a></p>
+        </li>
         <li><img src="${baseUrl}/images/ico06.png"/>
 
-            <p><a href="#">查询</a></p></li>
-
+            <p><a href="#">查询</a></p>
+        </li>
     </ul>
 
     <div class="ibox"><a class="ibtn"><img src="${baseUrl}/images/iadd.png"/>添加新的快捷功能</a></div>
@@ -87,8 +88,6 @@
         <li><a href="#">后台用户设置(权限)</a></li>
         <li><a href="#">系统设置</a></li>
     </ul>
-
-
 </div>
 </body>
 </html>
