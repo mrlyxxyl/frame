@@ -39,11 +39,11 @@
     </ul>
 </div>
 
-<div class="mainbox">
+<div class="main_box">
 
-    <div class="mainleft">
-        <div class="leftinfo">
-            <div class="listtitle"><a href="#" class="more1">更多</a>数据统计</div>
+    <div class="main_left">
+        <div class="left_info">
+            <div class="list_title"><a href="#" class="more1">更多</a>数据统计</div>
             <div class="maintj">
                 <table id='myTable5'>
                     <caption>.com players count</caption>
@@ -85,11 +85,11 @@
             </div>
         </div>
         <!--leftinfo end-->
-        <div class="leftinfos">
-            <div class="infoleft">
+        <div class="left_infos">
+            <div class="info_left">
 
-                <div class="listtitle"><a href="#" class="more1">更多</a>待办事项</div>
-                <ul class="newlist">
+                <div class="list_title"><a href="#" class="more1">更多</a>待办事项</div>
+                <ul class="new_list">
                     <li><a href="#">上海自贸区今日正式挂牌成立</a><b>10-09</b></li>
                     <li><a href="#">习近平将访东南亚两国 首次出席APEC峰会</a><b>10-08</b></li>
                     <li><a href="#">最高法:谎称炸弹致航班备降者从重追刑责</a><b>10-09</b></li>
@@ -99,8 +99,8 @@
                     <li><a href="#">囧!悍马没改好成华丽马车(图)</a><b>10-03</b></li>
                 </ul>
             </div>
-            <div class="inforight">
-                <div class="listtitle"><a href="#" class="more1">添加</a>常用工具</div>
+            <div class="info_right">
+                <div class="list_title"><a href="#" class="more1">添加</a>常用工具</div>
                 <ul class="tooli">
                     <li><span><img src="${baseUrl}/images/d01.png"/></span>
 
@@ -135,10 +135,10 @@
         </div>
     </div>
     <!--mainleft end-->
-    <div class="mainright">
+    <div class="main_right">
         <div class="dflist">
-            <div class="listtitle"><a href="#" class="more1">更多</a>最新信息</div>
-            <ul class="newlist">
+            <div class="list_title"><a href="#" class="more1">更多</a>最新信息</div>
+            <ul class="new_list">
                 <li><a href="#">上海自贸区今日正式挂牌成立</a></li>
                 <li><a href="#">习近平将访东南亚两国 首次出席APEC峰会</a></li>
                 <li><a href="#">最高法:谎称炸弹致航班备降者从重追刑责</a></li>
@@ -151,8 +151,8 @@
             </ul>
         </div>
         <div class="dflist1">
-            <div class="listtitle"><a href="#" class="more1">更多</a>信息统计</div>
-            <ul class="newlist">
+            <div class="list_title"><a href="#" class="more1">更多</a>信息统计</div>
+            <ul class="new_list">
                 <li><i>会员数：</i>2535462</li>
                 <li><i>文档数：</i>5546</li>
                 <li><i>普通文章：</i>2315</li>

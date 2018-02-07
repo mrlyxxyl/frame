@@ -19,12 +19,12 @@
     </ul>
 </div>
 
-<div class="formbody">
+<div class="form_body">
 
-    <div class="formtitle"><span>常用功能</span></div>
+    <div class="form_title"><span>常用功能</span></div>
 
     <div class="toolsli">
-        <ul class="toollist">
+        <ul class="tool_list">
             <li><a href="#"><img src="${baseUrl}/images/i01.png"/></a>
 
                 <h2>文档打印</h2></li>
@@ -41,13 +41,13 @@
 
                 <h2>信息统计</h2></li>
         </ul>
-        <span class="tooladd"><img src="${baseUrl}/images/add.png" title="添加"/></span>
+        <span class="tool_add"><img src="${baseUrl}/images/add.png" title="添加"/></span>
     </div>
 
-    <div class="formtitle"><span>数据分析</span></div>
+    <div class="form_title"><span>数据分析</span></div>
 
     <div class="toolsli">
-        <ul class="toollist">
+        <ul class="tool_list">
             <li><a href="#"><img src="${baseUrl}/images/i06.png"/></a>
 
                 <h2>费用汇总</h2></li>
@@ -61,7 +61,7 @@
 
                 <h2>通知公告</h2></li>
         </ul>
-        <span class="tooladd"><img src="${baseUrl}/images/add.png" title="添加"/></span>
+        <span class="tool_add"><img src="${baseUrl}/images/add.png" title="添加"/></span>
     </div>
 </div>
 </body>

@@ -29,7 +29,7 @@
     </ul>
 </div>
 
-<div class="comtitle">
+<div class="com_title">
     <span><img src="${baseUrl}/images/clist.png"/></span>
 
     <h2>资料(5)</h2>
@@ -38,7 +38,7 @@
 </div>
 
 
-<ul class="disklist">
+<ul class="disk_list">
 
     <li>
         <a href="filelist.html">
@@ -102,7 +102,7 @@
         </div>
     </li>
 </ul>
-<div class="comtitle">
+<div class="com_title">
     <span><img src="${baseUrl}/images/clist.png"/></span>
 
     <h2>其他(1)</h2>
@@ -110,7 +110,7 @@
     <div class="rline"></div>
 </div>
 
-<ul class="disklist">
+<ul class="disk_list">
     <li>
         <div class="dleft2"></div>
         <div class="dright">

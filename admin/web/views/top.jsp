@@ -21,7 +21,7 @@
 
 <body style="background:url(${baseUrl}/images/topbg.gif) repeat-x;">
 
-<div class="topleft">
+<div class="top_left">
     <a href="${baseUrl}/main.html" target="_parent"><img src="${baseUrl}/images/logo.png" title="系统首页"/></a>
 </div>
 
@@ -46,7 +46,7 @@
         <h2>系统设置</h2></a></li>
 </ul>
 
-<div class="topright">
+<div class="top_right">
     <ul>
         <li><span><img src="images/help.png" title="帮助" class="helpimg"/></span><a href="#">帮助</a></li>
         <li><a href="#">关于</a></li>

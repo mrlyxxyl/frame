@@ -61,7 +61,7 @@
             <li><span><img src="${baseUrl}/images/t05.png"/></span>设置</li>
         </ul>
     </div>
-    <table class="imgtable">
+    <table class="img_table">
 
         <thead>
         <tr>
@@ -148,22 +148,22 @@
             <li class="paginItem"><a href="javascript:;">5</a></li>
             <li class="paginItem more"><a href="javascript:;">...</a></li>
             <li class="paginItem"><a href="javascript:;">10</a></li>
-            <li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
+            <li class="paginItem"><a href="javascript:;"><span class="page_nxt"></span></a></li>
         </ul>
     </div>
     <div class="tip">
-        <div class="tiptop"><span>提示信息</span><a></a></div>
+        <div class="tip_top"><span>提示信息</span><a></a></div>
 
-        <div class="tipinfo">
+        <div class="tip_info">
             <span><img src="${baseUrl}/images/ticon.png"/></span>
 
-            <div class="tipright">
+            <div class="tip_right">
                 <p>是否确认对信息的修改 ？</p>
                 <cite>如果是请点击确定按钮 ，否则请点取消。</cite>
             </div>
         </div>
 
-        <div class="tipbtn">
+        <div class="tip_btn">
             <input name="" type="button" class="sure" value="确定"/>&nbsp;
             <input name="" type="button" class="cancel" value="取消"/>
         </div>
@@ -171,18 +171,18 @@
 </div>
 
 <div class="tip">
-    <div class="tiptop"><span>提示信息</span><a></a></div>
+    <div class="tip_top"><span>提示信息</span><a></a></div>
 
-    <div class="tipinfo">
+    <div class="tip_info">
         <span><img src="${baseUrl}/images/ticon.png"/></span>
 
-        <div class="tipright">
+        <div class="tip_right">
             <p>是否确认对信息的修改 ？</p>
             <cite>如果是请点击确定按钮 ，否则请点取消。</cite>
         </div>
     </div>
 
-    <div class="tipbtn">
+    <div class="tip_btn">
         <input name="" type="button" class="sure" value="确定"/>&nbsp;
         <input name="" type="button" class="cancel" value="取消"/>
     </div>

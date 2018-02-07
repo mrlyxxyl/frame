@@ -18,7 +18,7 @@
         <li><a href="#">列表</a></li>
     </ul>
 </div>
-<table class="filetable">
+<table class="file_table">
     <thead>
     <tr>
         <th width="25%">名称</th>

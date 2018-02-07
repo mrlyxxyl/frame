@@ -45,7 +45,7 @@
     </ul>
 </div>
 
-<div class="formbody">
+<div class="form_body">
 
 
     <div id="usual1" class="usual">
@@ -57,12 +57,12 @@
             </ul>
         </div>
 
-        <div id="tab1" class="tabson">
+        <div id="tab1" class="tab_son">
 
-            <div class="formtext">Hi，<b>admin</b>，欢迎您试用信息发布功能！</div>
+            <div class="form_text">Hi，<b>admin</b>，欢迎您试用信息发布功能！</div>
 
-            <ul class="forminfo">
-                <li><label>招聘企业<b>*</b></label><input name="" type="text" class="dfinput" value="请填写单位名称" style="width:518px;"/></li>
+            <ul class="form_info">
+                <li><label>招聘企业<b>*</b></label><input name="" type="text" class="df_input" value="请填写单位名称" style="width:518px;"/></li>
 
                 <li><label>职位名称<b>*</b></label>
 
@@ -123,10 +123,10 @@
                 <li><label>&nbsp;</label><input name="" type="button" class="btn" value="马上发布"/></li>
             </ul>
         </div>
-        <div id="tab2" class="tabson">
-            <ul class="seachform">
+        <div id="tab2" class="tab_son">
+            <ul class="seach_form">
 
-                <li><label>综合查询</label><input name="" type="text" class="scinput"/></li>
+                <li><label>综合查询</label><input name="" type="text" class="sc_input"/></li>
                 <li><label>指派</label>
 
                     <div class="vocation">
@@ -160,7 +160,7 @@
                 <li><label>&nbsp;</label><input name="" type="button" class="scbtn" value="查询"/></li>
             </ul>
 
-            <table class="tablelist">
+            <table class="table_list">
                 <thead>
                 <tr>
                     <th><input name="" type="checkbox" value="" checked="checked"/></th>

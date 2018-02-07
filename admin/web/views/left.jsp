@@ -31,15 +31,15 @@
 </head>
 
 <body style="background:#f0f9fd;">
-<div class="lefttop"><span></span>通讯录</div>
+<div class="left_top"><span></span>通讯录</div>
 
-<dl class="leftmenu">
+<dl class="left_menu">
 
     <dd>
         <div class="title">
             <span><img src="${baseUrl}/images/leftico01.png"/></span>管理信息
         </div>
-        <ul class="menuson">
+        <ul class="menu_son">
             <li><cite></cite><a href="${baseUrl}/index.html" target="rightFrame">首页模版</a><i></i></li>
             <li class="active"><cite></cite><a href="right.html" target="rightFrame">数据列表</a><i></i></li>
             <li><cite></cite><a href="${baseUrl}/imgtable.html" target="rightFrame">图片数据表</a><i></i></li>
@@ -56,7 +56,7 @@
         <div class="title">
             <span><img src="${baseUrl}/images/leftico02.png"/></span>其他设置
         </div>
-        <ul class="menuson">
+        <ul class="menu_son">
             <li><cite></cite><a href="#">编辑内容</a><i></i></li>
             <li><cite></cite><a href="#">发布信息</a><i></i></li>
             <li><cite></cite><a href="#">档案列表显示</a><i></i></li>
@@ -64,7 +64,7 @@
     </dd>
     <dd>
         <div class="title"><span><img src="${baseUrl}/images/leftico03.png"/></span>编辑器</div>
-        <ul class="menuson">
+        <ul class="menu_son">
             <li><cite></cite><a href="#">自定义</a><i></i></li>
             <li><cite></cite><a href="#">常用资料</a><i></i></li>
             <li><cite></cite><a href="#">信息列表</a><i></i></li>
@@ -73,7 +73,7 @@
     </dd>
     <dd>
         <div class="title"><span><img src="${baseUrl}/images/leftico04.png"/></span>日期管理</div>
-        <ul class="menuson">
+        <ul class="menu_son">
             <li><cite></cite><a href="#">自定义</a><i></i></li>
             <li><cite></cite><a href="#">常用资料</a><i></i></li>
             <li><cite></cite><a href="#">信息列表</a><i></i></li>

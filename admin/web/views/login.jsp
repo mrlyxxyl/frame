@@ -12,9 +12,9 @@
 
     <script type="text/javascript">
         $(function () {
-            $('.loginbox').css({'position': 'absolute', 'left': ($(window).width() - 692) / 2});
+            $('.login_box').css({'position': 'absolute', 'left': ($(window).width() - 692) / 2});
             $(window).resize(function () {
-                $('.loginbox').css({'position': 'absolute', 'left': ($(window).width() - 692) / 2});
+                $('.login_box').css({'position': 'absolute', 'left': ($(window).width() - 692) / 2});
             })
         });
     </script>
@@ -33,7 +33,7 @@
     <div id="cloud2" class="cloud"></div>
 </div>
 
-<div class="logintop">
+<div class="login_top">
     <span>欢迎登录后台管理界面平台</span>
     <ul>
         <li><a href="#">回首页</a></li>
@@ -42,20 +42,20 @@
     </ul>
 </div>
 
-<div class="loginbody">
+<div class="login_body">
 
-    <span class="systemlogo"></span>
+    <span class="system_logo"></span>
 
-    <div class="loginbox">
+    <div class="login_box">
         <form action="${baseUrl}/admin/login.do" method="post">
             <ul>
-                <li><input name="username" type="text" class="loginuser" value="admin"/></li>
-                <li><input name="password" type="password" class="loginpwd" value="password"/></li>
-                <li><input type="submit" class="loginbtn" value="登录"/><label><input name="" type="checkbox" value="" checked="checked"/>记住密码</label><label><a href="#">忘记密码？</a></label></li>
+                <li><input name="username" type="text" class="login_user" value="admin"/></li>
+                <li><input name="password" type="password" class="login_pwd" value="password"/></li>
+                <li><input type="submit" class="login_btn" value="登录"/><label><input name="" type="checkbox" value="" checked="checked"/>记住密码</label><label><a href="#">忘记密码？</a></label></li>
             </ul>
         </form>
     </div>
 </div>
-<div class="loginbm">版权所有 net.ys</div>
+<div class="login_bm">版权所有 net.ys</div>
 </body>
 </html>
