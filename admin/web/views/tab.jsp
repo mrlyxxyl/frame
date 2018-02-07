@@ -50,7 +50,7 @@
 
     <div id="usual1" class="usual">
 
-        <div class="itab">
+        <div class="i_tab">
             <ul>
                 <li><a href="#tab1" class="selected">发布通知</a></li>
                 <li><a href="#tab2">自定义</a></li>
@@ -94,9 +94,9 @@
                 </li>
                 <li><label>工作地点<b>*</b></label>
 
-                    <div class="usercity">
+                    <div class="user_city">
 
-                        <div class="cityleft">
+                        <div class="city_left">
                             <select class="select2">
                                 <option>江苏</option>
                                 <option>湖南</option>
@@ -106,7 +106,7 @@
                             </select>
                         </div>
 
-                        <div class="cityright">
+                        <div class="city_right">
                             <select class="select2">
                                 <option>南京</option>
                                 <option>无锡</option>
@@ -124,7 +124,7 @@
             </ul>
         </div>
         <div id="tab2" class="tab_son">
-            <ul class="seach_form">
+            <ul class="search_form">
 
                 <li><label>综合查询</label><input name="" type="text" class="sc_input"/></li>
                 <li><label>指派</label>
@@ -182,7 +182,7 @@
                     <td>江苏南京</td>
                     <td>2013-09-09 15:05</td>
                     <td>已审核</td>
-                    <td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink"> 删除</a></td>
+                    <td><a href="#" class="table_link">查看</a> <a href="#" class="table_link"> 删除</a></td>
                 </tr>
 
                 <tr>
@@ -193,7 +193,7 @@
                     <td>山东济南</td>
                     <td>2013-09-08 14:02</td>
                     <td>未审核</td>
-                    <td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink">删除</a></td>
+                    <td><a href="#" class="table_link">查看</a> <a href="#" class="table_link">删除</a></td>
                 </tr>
 
                 <tr>
@@ -204,7 +204,7 @@
                     <td>江苏无锡</td>
                     <td>2013-09-07 13:16</td>
                     <td>未审核</td>
-                    <td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink">删除</a></td>
+                    <td><a href="#" class="table_link">查看</a> <a href="#" class="table_link">删除</a></td>
                 </tr>
 
                 <tr>
@@ -215,7 +215,7 @@
                     <td>北京市</td>
                     <td>2013-09-06 10:36</td>
                     <td>已审核</td>
-                    <td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink">删除</a></td>
+                    <td><a href="#" class="table_link">查看</a> <a href="#" class="table_link">删除</a></td>
                 </tr>
 
                 <tr>
@@ -226,7 +226,7 @@
                     <td>山东济南</td>
                     <td>2013-09-08 14:02</td>
                     <td>未审核</td>
-                    <td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink">删除</a></td>
+                    <td><a href="#" class="table_link">查看</a> <a href="#" class="table_link">删除</a></td>
                 </tr>
                 </tbody>
             </table>

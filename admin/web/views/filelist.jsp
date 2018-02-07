@@ -35,7 +35,7 @@
         <td><img src="${baseUrl}/images/f01.png"/>Adobe Dreamweaver CS5简体中文绿色</td>
         <td>2013/10/14 17:38</td>
         <td>文件夹</td>
-        <td class="tdlast">0 KB</td>
+        <td class="td_last">0 KB</td>
         <td></td>
     </tr>
 
@@ -43,7 +43,7 @@
         <td><img src="${baseUrl}/images/f01.png"/>Adobe Photoshop CS5</td>
         <td>2013/10/14 17:38</td>
         <td>文件夹</td>
-        <td class="tdlast">30 KB</td>
+        <td class="td_last">30 KB</td>
         <td></td>
     </tr>
 
@@ -51,7 +51,7 @@
         <td><img src="${baseUrl}/images/f01.png"/>PS形状</td>
         <td>2013/10/14 17:38</td>
         <td>文件夹</td>
-        <td class="tdlast">0 KB</td>
+        <td class="td_last">0 KB</td>
         <td></td>
     </tr>
 
@@ -59,7 +59,7 @@
         <td><img src="${baseUrl}/images/f01.png"/>Microsoft Office 2007中文版</td>
         <td>2013/10/14 17:38</td>
         <td>文件夹</td>
-        <td class="tdlast">0 KB</td>
+        <td class="td_last">0 KB</td>
         <td></td>
     </tr>
 
@@ -67,7 +67,7 @@
         <td><img src="${baseUrl}/images/f02.png"/>SWiSHmax.rar</td>
         <td>2013/10/14 17:38</td>
         <td>压缩文件</td>
-        <td class="tdlast">125 KB</td>
+        <td class="td_last">125 KB</td>
         <td></td>
     </tr>
 
@@ -75,7 +75,7 @@
         <td><img src="${baseUrl}/images/f02.png"/>autodesk3dsmax.zip</td>
         <td>2013/10/14 17:38</td>
         <td>压缩文件</td>
-        <td class="tdlast">125 KB</td>
+        <td class="td_last">125 KB</td>
         <td></td>
     </tr>
 
@@ -83,7 +83,7 @@
         <td><img src="${baseUrl}/images/f02.png"/>Adobe Photoshop CS5.rar</td>
         <td>2013/10/14 17:38</td>
         <td>压缩文件</td>
-        <td class="tdlast">125 KB</td>
+        <td class="td_last">125 KB</td>
         <td></td>
     </tr>
 
@@ -91,7 +91,7 @@
         <td><img src="${baseUrl}/images/f03.png"/>Thunder7.2.7.3496.exe</td>
         <td>2013/10/14 17:38</td>
         <td>程序</td>
-        <td class="tdlast">125 KB</td>
+        <td class="td_last">125 KB</td>
         <td></td>
     </tr>
 
@@ -99,7 +99,7 @@
         <td><img src="${baseUrl}/images/f03.png"/>福昕阅读器_5.1.0.1117.exe</td>
         <td>2013/10/14 17:38</td>
         <td>程序</td>
-        <td class="tdlast">125 KB</td>
+        <td class="td_last">125 KB</td>
         <td></td>
     </tr>
 
@@ -107,7 +107,7 @@
         <td><img src="${baseUrl}/images/f04.png"/>libeay32.ai</td>
         <td>2013/10/14 17:38</td>
         <td>设计软件</td>
-        <td class="tdlast">125 KB</td>
+        <td class="td_last">125 KB</td>
         <td></td>
     </tr>
 
@@ -115,7 +115,7 @@
         <td><img src="${baseUrl}/images/f05.png"/>php.ini.xls</td>
         <td>2013/10/14 17:38</td>
         <td>电子表格</td>
-        <td class="tdlast">120 KB</td>
+        <td class="td_last">120 KB</td>
         <td></td>
     </tr>
 
@@ -123,7 +123,7 @@
         <td><img src="${baseUrl}/images/f06.png"/>pws-php5cgi.reg</td>
         <td>2013/10/14 17:38</td>
         <td>注册表</td>
-        <td class="tdlast">100 KB</td>
+        <td class="td_last">100 KB</td>
         <td></td>
     </tr>
 

@@ -512,7 +512,7 @@ h2 {
     background: none;
 }
 
-.rightinfo {
+.right_info {
     padding: 8px;
 }
 
@@ -590,7 +590,7 @@ h2 {
     border-right: dotted 1px #c7c7c7;
 }
 
-.tablelink {
+.table_link {
     color: #056dae;
 }
 
@@ -607,28 +607,28 @@ h2 {
 }
 
 /*page*/
-.pagin {
+.pag_in {
     position: relative;
     margin-top: 10px;
     padding: 0 12px;
 }
 
-.pagin .blue {
+.pag_in .blue {
     color: #056dae;
     font-style: normal;
 }
 
-.pagin .paginList {
+.pag_in .pag_in_list {
     position: absolute;
     right: 12px;
     top: 0;
 }
 
-.pagin .paginList .paginItem {
+.pag_in .pag_in_list .pag_in_item {
     float: left;
 }
 
-.pagin .paginList .paginItem a {
+.pag_in .pag_in_list .pag_in_item a {
     float: left;
     width: 31px;
     height: 28px;
@@ -639,39 +639,39 @@ h2 {
     color: #3399d5;
 }
 
-.pagin .paginList .paginItem:first-child a {
+.pag_in .pag_in_list .pag_in_item:first-child a {
     border-left: 1px solid #DDD;
 }
 
-.pagin .paginList .paginItem:first-child a {
+.pag_in .pag_in_list .pag_in_item:first-child a {
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
 }
 
-.pagin .paginList .paginItem:last-child a {
+.pag_in .pag_in_list .pag_in_item:last-child a {
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
 }
 
-.pagin .paginList .paginItem.current, .pagin .paginList .paginItem.current a {
+.pag_in .pag_in_list .pag_in_item.current, .pag_in .pag_in_list .pag_in_item.current a {
     background: #f5f5f5;
     cursor: default;
     color: #737373;
 }
 
-.pagin .paginList .paginItem:hover {
+.pag_in .pag_in_list .pag_in_item:hover {
     background: #f5f5f5;
 }
 
-.pagin .paginList .paginItem.more, .pagin .paginList .paginItem.more a:hover {
+.pag_in .pag_in_list .pag_in_item.more, .pag_in .pag_in_list .pag_in_item.more a:hover {
     cursor: default;
 }
 
-.pagin .paginList .paginItem.more:hover {
+.pag_in .pag_in_list .pag_in_item.more:hover {
     background: #FFF;
 }
 
-.pagin .paginList .paginItem.more a {
+.pag_in .pag_in_list .pag_in_item.more a {
     color: #737373;
 }
 
@@ -721,7 +721,7 @@ h2 {
     padding-left: 8px;
 }
 
-.xline {
+.x_line {
     border-bottom: solid 1px #dfe9ee;
     height: 5px;
 }
@@ -742,7 +742,7 @@ h2 {
     line-height: 25px;
 }
 
-.ibox {
+.i_box {
     clear: both;
     padding-left: 40px;
     padding-top: 18px;
@@ -860,7 +860,7 @@ h2 {
     padding-right: 17px;
 }
 
-.maintj {
+.main_tj {
     text-align: center;
 }
 
@@ -888,7 +888,7 @@ h2 {
     padding-left: 10px;
 }
 
-.left_infos {
+.left_info_s {
     height: 238px;
     margin-top: 8px;
 }
@@ -905,22 +905,22 @@ h2 {
     height: 238px;
 }
 
-.tooli {
+.too_li {
     padding: 30px 20px;
 }
 
-.tooli li {
+.too_li li {
     float: left;
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 20px;
 }
 
-.tooli li span {
+.too_li li span {
     text-align: center;
 }
 
-.tooli li p {
+.too_li li p {
     line-height: 35px;
     text-align: center;
 }
@@ -1108,7 +1108,7 @@ h2 {
 }
 
 /*tools*/
-.toolsli {
+.tools_li {
     clear: both;
     overflow: hidden;
     margin-bottom: 20px;
@@ -1248,7 +1248,7 @@ h2 {
     border: solid 1px #e5ecf0;
 }
 
-.dleft {
+.d_left {
     background: url(../images/c02.png) no-repeat;
     height: 50px;
     margin-left: 12px;
@@ -1266,7 +1266,7 @@ h2 {
     margin-top: 15px;
 }
 
-.dleft2 {
+.d_left2 {
     background: url(../images/c03.png) no-repeat;
     height: 50px;
     margin-left: 12px;
@@ -1275,22 +1275,22 @@ h2 {
     margin-top: 15px;
 }
 
-.dright {
+.d_right {
     float: left;
     margin-left: 10px;
     margin-top: 5px;
 }
 
-.dright h3 {
+.d_right h3 {
     font-weight: normal;
     padding-top: 15px;
 }
 
-.dright p {
+.d_right p {
     color: #949494;
 }
 
-.dinfo {
+.d_info {
     width: 189px;
     height: 15px;
     background: url(../images/diskbg.png) no-repeat;
@@ -1298,7 +1298,7 @@ h2 {
     margin-bottom: 5px;
 }
 
-.dinfo span {
+.d_info span {
     background: url(../images/cbg.png) repeat-x;
     height: 15px;
 }
@@ -1328,7 +1328,7 @@ h2 {
     margin-right: 5px;
 }
 
-.tdlast {
+.td_last {
     text-align: right;
 }
 
@@ -1418,7 +1418,7 @@ h2 {
     color: #ea2020;
 }
 
-.imgtd {
+.img_td {
     text-indent: 0;
 }
 
@@ -1431,14 +1431,14 @@ h2 {
 }
 
 /*tab*/
-.itab {
+.i_tab {
     height: 36px;
     border-bottom: solid 1px #d0dee5;
     position: relative;
     border-left: solid 1px #d3dbde;
 }
 
-.itab ul li {
+.i_tab ul li {
     float: left;
     height: 37px;
     line-height: 37px;
@@ -1446,14 +1446,14 @@ h2 {
     border-right: solid 1px #d3dbde;
 }
 
-.itab ul li a {
+.i_tab ul li a {
     font-size: 14px;
     color: #000;
     padding-left: 25px;
     padding-right: 25px;
 }
 
-.itab ul li a.selected {
+.i_tab ul li a.selected {
     height: 37px;
     display: block;
     background: url(../images/itabbg1.png) repeat-x;
@@ -1501,18 +1501,18 @@ h2 {
     border: 3px solid #fff;
 }
 
-.class_list li .lright {
+.class_list li .l_right {
     float: left;
     width: 150px;
 }
 
-.class_list li .lright h2 {
+.class_list li .l_right h2 {
     font-size: 12px;
     font-weight: bold;
     line-height: 30px;
 }
 
-.class_list li .lright p {
+.class_list li .l_right p {
     line-height: 20px;
 }
 
@@ -1540,16 +1540,16 @@ h2 {
 }
 
 /*seachform*/
-.seach_form {
+.search_form {
     height: 42px;
 }
 
-.seach_form li {
+.search_form li {
     float: left;
     margin-right: 15px;
 }
 
-.seach_form li label {
+.search_form li label {
     padding-right: 10px;
     float: left;
     line-height: 32px;

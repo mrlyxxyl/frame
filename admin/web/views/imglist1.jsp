@@ -29,7 +29,7 @@
     </ul>
 </div>
 
-<div class="rightinfo">
+<div class="right_info">
 
     <div class="tools">
 
@@ -47,7 +47,7 @@
         <li>
             <span><img src="${baseUrl}/images/001.jpg"/></span>
 
-            <div class="lright">
+            <div class="l_right">
                 <h2>模拟电子技术</h2>
 
                 <p>课程数：共35章<br/>已完成：7章<br/>学习中：6章</p>
@@ -58,7 +58,7 @@
         <li>
             <span><img src="${baseUrl}/images/001.jpg"/></span>
 
-            <div class="lright">
+            <div class="l_right">
                 <h2>模拟电子技术</h2>
 
                 <p>课程数：共35章<br/>已完成：7章<br/>学习中：6章</p>
@@ -69,7 +69,7 @@
         <li>
             <span><img src="${baseUrl}/images/001.jpg"/></span>
 
-            <div class="lright">
+            <div class="l_right">
                 <h2>模拟电子技术</h2>
 
                 <p>课程数：共35章<br/>已完成：7章<br/>学习中：6章</p>
@@ -80,7 +80,7 @@
         <li>
             <span><img src="${baseUrl}/images/001.jpg"/></span>
 
-            <div class="lright">
+            <div class="l_right">
                 <h2>模拟电子技术</h2>
 
                 <p>课程数：共35章<br/>已完成：7章<br/>学习中：6章</p>
@@ -91,7 +91,7 @@
         <li>
             <span><img src="${baseUrl}/images/001.jpg"/></span>
 
-            <div class="lright">
+            <div class="l_right">
                 <h2>模拟电子技术</h2>
 
                 <p>课程数：共35章<br/>已完成：7章<br/>学习中：6章</p>
@@ -102,7 +102,7 @@
         <li>
             <span><img src="${baseUrl}/images/001.jpg"/></span>
 
-            <div class="lright">
+            <div class="l_right">
                 <h2>模拟电子技术</h2>
 
                 <p>课程数：共35章<br/>已完成：7章<br/>学习中：6章</p>
@@ -113,7 +113,7 @@
         <li>
             <span><img src="${baseUrl}/images/001.jpg"/></span>
 
-            <div class="lright">
+            <div class="l_right">
                 <h2>模拟电子技术</h2>
 
                 <p>课程数：共35章<br/>已完成：7章<br/>学习中：6章</p>
@@ -124,7 +124,7 @@
         <li>
             <span><img src="${baseUrl}/images/001.jpg"/></span>
 
-            <div class="lright">
+            <div class="l_right">
                 <h2>模拟电子技术</h2>
 
                 <p>课程数：共35章<br/>已完成：7章<br/>学习中：6章</p>
@@ -135,18 +135,18 @@
 
     <div class="clear"></div>
 
-    <div class="pagin">
+    <div class="pag_in">
         <div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
-        <ul class="paginList">
-            <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
-            <li class="paginItem"><a href="javascript:;">1</a></li>
-            <li class="paginItem current"><a href="javascript:;">2</a></li>
-            <li class="paginItem"><a href="javascript:;">3</a></li>
-            <li class="paginItem"><a href="javascript:;">4</a></li>
-            <li class="paginItem"><a href="javascript:;">5</a></li>
-            <li class="paginItem more"><a href="javascript:;">...</a></li>
-            <li class="paginItem"><a href="javascript:;">10</a></li>
-            <li class="paginItem"><a href="javascript:;"><span class="page_nxt"></span></a></li>
+        <ul class="pag_in_list">
+            <li class="pag_in_item"><a href="javascript:;"><span class="pagepre"></span></a></li>
+            <li class="pag_in_item"><a href="javascript:;">1</a></li>
+            <li class="pag_in_item current"><a href="javascript:;">2</a></li>
+            <li class="pag_in_item"><a href="javascript:;">3</a></li>
+            <li class="pag_in_item"><a href="javascript:;">4</a></li>
+            <li class="pag_in_item"><a href="javascript:;">5</a></li>
+            <li class="pag_in_item more"><a href="javascript:;">...</a></li>
+            <li class="pag_in_item"><a href="javascript:;">10</a></li>
+            <li class="pag_in_item"><a href="javascript:;"><span class="page_nxt"></span></a></li>
         </ul>
     </div>
 

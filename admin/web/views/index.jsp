@@ -31,7 +31,7 @@
         <i>您上次登录的时间：2013-10-09 15:22</i> （不是您登录的？<a href="#">请点这里</a>）
     </div>
 
-    <div class="xline"></div>
+    <div class="x_line"></div>
 
     <ul class="icon_list">
 
@@ -61,9 +61,9 @@
         </li>
     </ul>
 
-    <div class="ibox"><a class="ibtn"><img src="${baseUrl}/images/iadd.png"/>添加新的快捷功能</a></div>
+    <div class="i_box"><a class="ibtn"><img src="${baseUrl}/images/iadd.png"/>添加新的快捷功能</a></div>
 
-    <div class="xline"></div>
+    <div class="x_line"></div>
     <div class="box"></div>
 
     <div class="wel_info">
@@ -77,7 +77,7 @@
         <li><span>您可以进行密码修改、账户设置等操作</span><a class="ibtn">账户管理</a></li>
     </ul>
 
-    <div class="xline"></div>
+    <div class="x_line"></div>
 
     <div class="info"><b>查看网站使用指南，您可以了解到多种风格的B/S后台管理界面,软件界面设计，图标设计，手机界面等相关信息</b>(More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>)</div>
 

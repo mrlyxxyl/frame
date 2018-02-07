@@ -87,17 +87,17 @@ option {
     background-position: -80px 0;
 }
 
-.vocation, .usercity {
+.vocation, .user_city {
     float: left;
 }
 
-.cityleft {
+.city_left {
     float: left;
     padding-right: 10px;
     _padding-right: 15px;
 }
 
-.cityright {
+.city_right {
     float: left;
 }
 

@@ -43,61 +43,61 @@
     <li>
         <a href="filelist.html">
             <div class="dleft1"></div>
-            <div class="dright">
+            <div class="d_right">
                 <h2>信息文档(25)</h2>
 
-                <div class="dinfo"><span style="width:100px;"></span></div>
+                <div class="d_info"><span style="width:100px;"></span></div>
                 <p>34 MB 空间,共 253 个文件</p>
             </div>
         </a>
     </li>
 
     <li>
-        <div class="dleft"></div>
-        <div class="dright">
+        <div class="d_left"></div>
+        <div class="d_right">
             <h2>图片(30)</h2>
 
-            <div class="dinfo"><span style="width:50px;"></span></div>
+            <div class="d_info"><span style="width:50px;"></span></div>
             <p>120 MB 空间,共 5100 个文件</p>
         </div>
     </li>
 
     <li>
-        <div class="dleft"></div>
-        <div class="dright">
+        <div class="d_left"></div>
+        <div class="d_right">
             <h2>软件资料(43)</h2>
 
-            <div class="dinfo"><span style="width:38px;"></span></div>
+            <div class="d_info"><span style="width:38px;"></span></div>
             <p>500 MB 空间,共 12 个文件</p>
         </div>
     </li>
 
     <li>
-        <div class="dleft"></div>
-        <div class="dright">
+        <div class="d_left"></div>
+        <div class="d_right">
             <h2>系统资料(25)</h2>
 
-            <div class="dinfo"><span style="width:60px;"></span></div>
+            <div class="d_info"><span style="width:60px;"></span></div>
             <p>125 MB 空间,共 3585 个文件</p>
         </div>
     </li>
 
     <li class="selected">
-        <div class="dleft"></div>
-        <div class="dright">
+        <div class="d_left"></div>
+        <div class="d_right">
             <h2>(89)</h2>
 
-            <div class="dinfo"><span style="width:40px;"></span></div>
+            <div class="d_info"><span style="width:40px;"></span></div>
             <p>10 MB 空间,共 25 个文件</p>
         </div>
     </li>
 
     <li>
-        <div class="dleft"></div>
-        <div class="dright">
+        <div class="d_left"></div>
+        <div class="d_right">
             <h2>其他(10)</h2>
 
-            <div class="dinfo"><span style="width:15px;"></span></div>
+            <div class="d_info"><span style="width:15px;"></span></div>
             <p>2 MB 空间,共 53 个文件</p>
         </div>
     </li>
@@ -112,8 +112,8 @@
 
 <ul class="disk_list">
     <li>
-        <div class="dleft2"></div>
-        <div class="dright">
+        <div class="d_left2"></div>
+        <div class="d_right">
             <h3>相关信息资料</h3>
 
             <p>文件夹</p>

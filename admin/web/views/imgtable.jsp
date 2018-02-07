@@ -47,7 +47,7 @@
     </ul>
 </div>
 
-<div class="rightinfo">
+<div class="right_info">
 
     <div class="tools">
 
@@ -76,7 +76,7 @@
         </thead>
         <tbody>
         <tr>
-            <td class="imgtd"><img src="${baseUrl}/images/img11.png"/></td>
+            <td class="img_td"><img src="${baseUrl}/images/img11.png"/></td>
             <td><a href="#">非常不错的国外后台模板，支持HTML5</a>
 
                 <p>发布时间：2013-10-12 09:25:18</p></td>
@@ -88,7 +88,7 @@
         </tr>
 
         <tr>
-            <td class="imgtd"><img src="${baseUrl}/images/img12.png"/></td>
+            <td class="img_td"><img src="${baseUrl}/images/img12.png"/></td>
             <td><a href="#">一套简约形状图标UI下载</a>
 
                 <p>发布时间：2013-10-12 09:25:18</p></td>
@@ -100,7 +100,7 @@
         </tr>
 
         <tr>
-            <td class="imgtd"><img src="${baseUrl}/images/img13.png"/></td>
+            <td class="img_td"><img src="${baseUrl}/images/img13.png"/></td>
             <td><a href="#">配色软件界面设计PSD下载</a>
 
                 <p>发布时间：2013-10-12 09:25:18</p></td>
@@ -112,7 +112,7 @@
         </tr>
 
         <tr>
-            <td class="imgtd"><img src="${baseUrl}/images/img14.png"/></td>
+            <td class="img_td"><img src="${baseUrl}/images/img14.png"/></td>
             <td><a href="#">.com分享-123张switch界面UI设计</a>
 
                 <p>发布时间：2013-10-12 09:25:18</p></td>
@@ -124,7 +124,7 @@
         </tr>
 
         <tr>
-            <td class="imgtd"><img src="${baseUrl}/images/img15.png"/></td>
+            <td class="img_td"><img src="${baseUrl}/images/img15.png"/></td>
             <td><a href="#">章鱼图标PSD源文件下载</a>
 
                 <p>发布时间：2013-10-12 09:25:18</p></td>
@@ -137,18 +137,18 @@
         </tbody>
     </table>
 
-    <div class="pagin">
+    <div class="pag_in">
         <div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
-        <ul class="paginList">
-            <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
-            <li class="paginItem"><a href="javascript:;">1</a></li>
-            <li class="paginItem current"><a href="javascript:;">2</a></li>
-            <li class="paginItem"><a href="javascript:;">3</a></li>
-            <li class="paginItem"><a href="javascript:;">4</a></li>
-            <li class="paginItem"><a href="javascript:;">5</a></li>
-            <li class="paginItem more"><a href="javascript:;">...</a></li>
-            <li class="paginItem"><a href="javascript:;">10</a></li>
-            <li class="paginItem"><a href="javascript:;"><span class="page_nxt"></span></a></li>
+        <ul class="pag_in_list">
+            <li class="pag_in_item"><a href="javascript:;"><span class="pagepre"></span></a></li>
+            <li class="pag_in_item"><a href="javascript:;">1</a></li>
+            <li class="pag_in_item current"><a href="javascript:;">2</a></li>
+            <li class="pag_in_item"><a href="javascript:;">3</a></li>
+            <li class="pag_in_item"><a href="javascript:;">4</a></li>
+            <li class="pag_in_item"><a href="javascript:;">5</a></li>
+            <li class="pag_in_item more"><a href="javascript:;">...</a></li>
+            <li class="pag_in_item"><a href="javascript:;">10</a></li>
+            <li class="pag_in_item"><a href="javascript:;"><span class="page_nxt"></span></a></li>
         </ul>
     </div>
     <div class="tip">

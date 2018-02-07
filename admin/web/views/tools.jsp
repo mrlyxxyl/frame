@@ -23,7 +23,7 @@
 
     <div class="form_title"><span>常用功能</span></div>
 
-    <div class="toolsli">
+    <div class="tools_li">
         <ul class="tool_list">
             <li><a href="#"><img src="${baseUrl}/images/i01.png"/></a>
 
@@ -46,7 +46,7 @@
 
     <div class="form_title"><span>数据分析</span></div>
 
-    <div class="toolsli">
+    <div class="tools_li">
         <ul class="tool_list">
             <li><a href="#"><img src="${baseUrl}/images/i06.png"/></a>
 

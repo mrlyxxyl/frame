@@ -40,7 +40,7 @@
     </ul>
 </div>
 
-<div class="rightinfo">
+<div class="right_info">
 
     <div class="tools">
 
@@ -76,7 +76,7 @@
             <td>江苏南京</td>
             <td>2013-09-09 15:05</td>
             <td>已审核</td>
-            <td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink"> 删除</a></td>
+            <td><a href="#" class="table_link">查看</a> <a href="#" class="table_link"> 删除</a></td>
         </tr>
 
         <tr>
@@ -87,7 +87,7 @@
             <td>山东济南</td>
             <td>2013-09-08 14:02</td>
             <td>未审核</td>
-            <td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink">删除</a></td>
+            <td><a href="#" class="table_link">查看</a> <a href="#" class="table_link">删除</a></td>
         </tr>
 
         <tr>
@@ -98,7 +98,7 @@
             <td>江苏无锡</td>
             <td>2013-09-07 13:16</td>
             <td>未审核</td>
-            <td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink">删除</a></td>
+            <td><a href="#" class="table_link">查看</a> <a href="#" class="table_link">删除</a></td>
         </tr>
 
         <tr>
@@ -109,7 +109,7 @@
             <td>北京市</td>
             <td>2013-09-06 10:36</td>
             <td>已审核</td>
-            <td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink">删除</a></td>
+            <td><a href="#" class="table_link">查看</a> <a href="#" class="table_link">删除</a></td>
         </tr>
 
         <tr>
@@ -120,7 +120,7 @@
             <td>江苏南京</td>
             <td>2013-09-05 13:25</td>
             <td>已审核</td>
-            <td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink">删除</a></td>
+            <td><a href="#" class="table_link">查看</a> <a href="#" class="table_link">删除</a></td>
         </tr>
 
         <tr>
@@ -131,7 +131,7 @@
             <td>广东深圳</td>
             <td>2013-09-04 12:00</td>
             <td>已审核</td>
-            <td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink">删除</a></td>
+            <td><a href="#" class="table_link">查看</a> <a href="#" class="table_link">删除</a></td>
         </tr>
 
         <tr>
@@ -142,7 +142,7 @@
             <td>湖南长沙</td>
             <td>2013-09-03 00:05</td>
             <td>未审核</td>
-            <td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink">删除</a></td>
+            <td><a href="#" class="table_link">查看</a> <a href="#" class="table_link">删除</a></td>
         </tr>
 
         <tr>
@@ -153,7 +153,7 @@
             <td>江苏南京</td>
             <td>2013-09-02 15:05</td>
             <td>未审核</td>
-            <td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink">删除</a></td>
+            <td><a href="#" class="table_link">查看</a> <a href="#" class="table_link">删除</a></td>
         </tr>
 
         <tr>
@@ -164,23 +164,23 @@
             <td>山东滨州</td>
             <td>2013-09-01 10:26</td>
             <td>已审核</td>
-            <td><a href="#" class="tablelink">查看</a> <a href="#" class="tablelink">删除</a></td>
+            <td><a href="#" class="table_link">查看</a> <a href="#" class="table_link">删除</a></td>
         </tr>
         </tbody>
     </table>
 
-    <div class="pagin">
+    <div class="pag_in">
         <div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
-        <ul class="paginList">
-            <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
-            <li class="paginItem"><a href="javascript:;">1</a></li>
-            <li class="paginItem current"><a href="javascript:;">2</a></li>
-            <li class="paginItem"><a href="javascript:;">3</a></li>
-            <li class="paginItem"><a href="javascript:;">4</a></li>
-            <li class="paginItem"><a href="javascript:;">5</a></li>
-            <li class="paginItem more"><a href="javascript:;">...</a></li>
-            <li class="paginItem"><a href="javascript:;">10</a></li>
-            <li class="paginItem"><a href="javascript:;"><span class="page_nxt"></span></a></li>
+        <ul class="pag_in_list">
+            <li class="pag_in_item"><a href="javascript:;"><span class="pagepre"></span></a></li>
+            <li class="pag_in_item"><a href="javascript:;">1</a></li>
+            <li class="pag_in_item current"><a href="javascript:;">2</a></li>
+            <li class="pag_in_item"><a href="javascript:;">3</a></li>
+            <li class="pag_in_item"><a href="javascript:;">4</a></li>
+            <li class="pag_in_item"><a href="javascript:;">5</a></li>
+            <li class="pag_in_item more"><a href="javascript:;">...</a></li>
+            <li class="pag_in_item"><a href="javascript:;">10</a></li>
+            <li class="pag_in_item"><a href="javascript:;"><span class="page_nxt"></span></a></li>
         </ul>
     </div>
 

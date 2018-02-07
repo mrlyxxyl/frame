@@ -44,7 +44,7 @@
     <div class="main_left">
         <div class="left_info">
             <div class="list_title"><a href="#" class="more1">更多</a>数据统计</div>
-            <div class="maintj">
+            <div class="main_tj">
                 <table id='myTable5'>
                     <caption>.com players count</caption>
                     <thead>
@@ -85,7 +85,7 @@
             </div>
         </div>
         <!--leftinfo end-->
-        <div class="left_infos">
+        <div class="left_info_s">
             <div class="info_left">
 
                 <div class="list_title"><a href="#" class="more1">更多</a>待办事项</div>
@@ -101,7 +101,7 @@
             </div>
             <div class="info_right">
                 <div class="list_title"><a href="#" class="more1">添加</a>常用工具</div>
-                <ul class="tooli">
+                <ul class="too_li">
                     <li><span><img src="${baseUrl}/images/d01.png"/></span>
 
                         <p><a href="#">信息资料</a></p>
