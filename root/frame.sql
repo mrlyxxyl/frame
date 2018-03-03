@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : 125
-Source Server Version : 50637
-Source Host           : 192.168.1.125:3306
-Source Database       : framework
+Source Server         : local
+Source Server Version : 50639
+Source Host           : 192.168.1.151:3306
+Source Database       : frame
 
 Target Server Type    : MYSQL
-Target Server Version : 50637
+Target Server Version : 50639
 File Encoding         : 65001
 
-Date: 2017-11-03 17:54:17
+Date: 2018-03-03 12:37:22
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -29,7 +29,7 @@ CREATE TABLE `admin` (
 -- ----------------------------
 -- Records of admin
 -- ----------------------------
-INSERT INTO `admin` VALUES ('1', 'admin', 'e10adc3949ba59abbe56e057f20f883e');
+INSERT INTO `admin` VALUES ('1', 'admin', '8f8562631ccdc8abfa75b4dc04bd5312');
 
 -- ----------------------------
 -- Table structure for `sys_enum`

@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75feac18-d80f-4fed-b677-524f84bc19a8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/src/main/java/net/ys/controller/AdminController.java" afterPath="$PROJECT_DIR$/admin/src/main/java/net/ys/controller/AdminController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/src/main/java/net/ys/controller/MainController.java" afterPath="$PROJECT_DIR$/admin/src/main/java/net/ys/controller/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/admin.iml" afterPath="$PROJECT_DIR$/admin/admin.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/api.iml" afterPath="$PROJECT_DIR$/api/api.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/src/main/resources/config.properties" afterPath="$PROJECT_DIR$/admin/src/main/resources/config.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/core.iml" afterPath="$PROJECT_DIR$/core/core.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/views/default.jsp" afterPath="$PROJECT_DIR$/admin/web/views/default.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/views/error.jsp" afterPath="$PROJECT_DIR$/admin/web/views/error.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/file/file.iml" afterPath="$PROJECT_DIR$/file/file.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame.ipr" afterPath="$PROJECT_DIR$/frame.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/views/left.jsp" afterPath="$PROJECT_DIR$/admin/web/views/left.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/views/top.jsp" afterPath="$PROJECT_DIR$/admin/web/views/top.jsp" />
-      <change type="MOVED" beforePath="E:\workspace_idea\frame\admin\web\views\filelist.jsp" afterPath="$PROJECT_DIR$/admin/web/views/fileList.jsp" />
-      <change type="MOVED" beforePath="E:\workspace_idea\frame\admin\web\views\imglist1.jsp" afterPath="$PROJECT_DIR$/admin/web/views/imgListOne.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/root/frame.sql" afterPath="$PROJECT_DIR$/root/frame.sql" />
     </list>
     <ignored path="frame.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -87,34 +74,37 @@
       <file leaf-file-name="left.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/web/views/left.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="59" selection-start="2318" selection-end="2326" vertical-scroll-proportion="0.0">
+            <state line="49" column="59" selection-start="2318" selection-end="2326" vertical-scroll-proportion="-0.7352941">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="imgListOne.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/web/views/imgListOne.jsp">
+      <file leaf-file-name="frame.sql" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/root/frame.sql">
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="25" selection-start="486" selection-end="493" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/src/main/java/net/ys/controller/MainController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="58" selection-start="2642" selection-end="2642" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fileList.jsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="fileList.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/web/views/fileList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="71" selection-start="616" selection-end="616" vertical-scroll-proportion="0.2795031">
+            <state line="9" column="71" selection-start="616" selection-end="616" vertical-scroll-proportion="-6.617647">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/src/main/java/net/ys/controller/AdminController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="13" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -215,6 +205,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="root" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -230,6 +230,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -332,6 +350,11 @@
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace_idea\frame\root" />
+    </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.admin">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -696,7 +719,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="1" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -787,20 +810,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/web/views/error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="57" selection-start="1295" selection-end="1295" vertical-scroll-proportion="-8.088235">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/web/views/form.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="16.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/web/views/imgList.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="108.088234">
@@ -871,30 +880,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/web/views/imgListOne.jsp">
+    <entry file="file://$PROJECT_DIR$/admin/web/views/fileList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="25" selection-start="486" selection-end="493" vertical-scroll-proportion="0.0">
+        <state line="9" column="71" selection-start="616" selection-end="616" vertical-scroll-proportion="-6.617647">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/web/views/left.jsp">
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/net/ys/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="59" selection-start="2318" selection-end="2326" vertical-scroll-proportion="0.0">
+        <state line="14" column="13" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/main/java/net/ys/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="58" selection-start="2642" selection-end="2642" vertical-scroll-proportion="0.0">
+        <state line="76" column="34" selection-start="2199" selection-end="2204" vertical-scroll-proportion="0.10607866">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/web/views/fileList.jsp">
+    <entry file="file://$PROJECT_DIR$/admin/web/views/imgListOne.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="71" selection-start="616" selection-end="616" vertical-scroll-proportion="0.2795031">
+        <state line="8" column="25" selection-start="486" selection-end="493" vertical-scroll-proportion="0.031055901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/web/views/left.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="59" selection-start="2318" selection-end="2326" vertical-scroll-proportion="-0.7352941">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/root/frame.sql">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
