@@ -31,4 +31,70 @@ public class MainController {
         ModelAndView modelAndView = new ModelAndView("index");
         return modelAndView;
     }
+
+    @RequestMapping(value = "default")
+    public ModelAndView sysDefault() {
+        ModelAndView modelAndView = new ModelAndView("default");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "imgTable")
+    public ModelAndView imgTable() {
+        ModelAndView modelAndView = new ModelAndView("imgTable");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "imgList")
+    public ModelAndView imgList() {
+        ModelAndView modelAndView = new ModelAndView("imgList");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "imgListOne")
+    public ModelAndView imgListOne() {
+        ModelAndView modelAndView = new ModelAndView("imgListOne");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "tools")
+    public ModelAndView tools() {
+        ModelAndView modelAndView = new ModelAndView("tools");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "computer")
+    public ModelAndView computer() {
+        ModelAndView modelAndView = new ModelAndView("computer");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "tab")
+    public ModelAndView tab() {
+        ModelAndView modelAndView = new ModelAndView("tab");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "right")
+    public ModelAndView right() {
+        ModelAndView modelAndView = new ModelAndView("right");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "form")
+    public ModelAndView form() {
+        ModelAndView modelAndView = new ModelAndView("form");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "fileList")
+    public ModelAndView fileList() {
+        ModelAndView modelAndView = new ModelAndView("fileList");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "error")
+    public ModelAndView error() {
+        ModelAndView modelAndView = new ModelAndView("error");
+        return modelAndView;
+    }
 }

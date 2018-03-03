@@ -22,35 +22,35 @@
 <body style="background:url(${baseUrl}/images/topbg.gif) repeat-x;">
 
 <div class="top_left">
-    <a href="${baseUrl}/main.html" target="_parent"><img src="${baseUrl}/images/logo.png" title="系统首页"/></a>
+    <a href="${baseUrl}/main/main.do" target="_parent"><img src="${baseUrl}/images/logo.png" title="系统首页"/></a>
 </div>
 
 <ul class="nav">
-    <li><a href="${baseUrl}/default.html" target="rightFrame" class="selected"><img src="${baseUrl}/images/icon01.png" title="工作台"/>
+    <li><a href="${baseUrl}/main/default.do" target="rightFrame" class="selected"><img src="${baseUrl}/images/icon01.png" title="工作台"/>
 
         <h2>工作台</h2></a></li>
-    <li><a href="${baseUrl}/imgtable.html" target="rightFrame"><img src="${baseUrl}/images/icon02.png" title="模型管理"/>
+    <li><a href="${baseUrl}/main/imgTable.do" target="rightFrame"><img src="${baseUrl}/images/icon02.png" title="模型管理"/>
 
         <h2>模型管理</h2></a></li>
-    <li><a href="${baseUrl}/imglist.html" target="rightFrame"><img src="${baseUrl}/images/icon03.png" title="模块设计"/>
+    <li><a href="${baseUrl}/main/imgList.do" target="rightFrame"><img src="${baseUrl}/images/icon03.png" title="模块设计"/>
 
         <h2>模块设计</h2></a></li>
-    <li><a href="${baseUrl}/tools.html" target="rightFrame"><img src="${baseUrl}/images/icon04.png" title="常用工具"/>
+    <li><a href="${baseUrl}/main/tools.do" target="rightFrame"><img src="${baseUrl}/images/icon04.png" title="常用工具"/>
 
         <h2>常用工具</h2></a></li>
-    <li><a href="${baseUrl}/computer.html" target="rightFrame"><img src="${baseUrl}/images/icon05.png" title="文件管理"/>
+    <li><a href="${baseUrl}/main/computer.do" target="rightFrame"><img src="${baseUrl}/images/icon05.png" title="文件管理"/>
 
         <h2>文件管理</h2></a></li>
-    <li><a href="${baseUrl}/tab.html" target="rightFrame"><img src="${baseUrl}/images/icon06.png" title="系统设置"/>
+    <li><a href="${baseUrl}/main/tab.do" target="rightFrame"><img src="${baseUrl}/images/icon06.png" title="系统设置"/>
 
         <h2>系统设置</h2></a></li>
 </ul>
 
 <div class="top_right">
     <ul>
-        <li><span><img src="images/help.png" title="帮助" class="helpimg"/></span><a href="#">帮助</a></li>
+        <li><span><img src="${baseUrl}/images/help.png" title="帮助" class="helpimg"/></span><a href="#">帮助</a></li>
         <li><a href="#">关于</a></li>
-        <li><a href="login.html" target="_parent">退出</a></li>
+        <li><a href="${baseUrl}/admin/loginOut.do" target="_parent">退出</a></li>
     </ul>
     <div class="user">
         <span>admin</span>

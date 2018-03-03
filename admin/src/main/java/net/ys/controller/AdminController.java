@@ -31,6 +31,12 @@ public class AdminController {
         return "redirect:/main/main.do";
     }
 
+    @RequestMapping(value = "loginOut", method = RequestMethod.GET)
+    public String loginOut(HttpSession session) {
+        session.removeAttribute("admin");
+        return "login";
+    }
+
     @RequestMapping(value = "index")
     public ModelAndView statistics() {
         ModelAndView modelAndView = new ModelAndView("index");

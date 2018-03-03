@@ -40,16 +40,16 @@
             <span><img src="${baseUrl}/images/leftico01.png"/></span>管理信息
         </div>
         <ul class="menu_son">
-            <li><cite></cite><a href="${baseUrl}/index.html" target="rightFrame">首页模版</a><i></i></li>
-            <li class="active"><cite></cite><a href="right.html" target="rightFrame">数据列表</a><i></i></li>
-            <li><cite></cite><a href="${baseUrl}/imgtable.html" target="rightFrame">图片数据表</a><i></i></li>
-            <li><cite></cite><a href="${baseUrl}/form.html" target="rightFrame">添加编辑</a><i></i></li>
-            <li><cite></cite><a href="${baseUrl}/imglist.html" target="rightFrame">图片列表</a><i></i></li>
-            <li><cite></cite><a href="${baseUrl}/imglist1.html" target="rightFrame">自定义</a><i></i></li>
-            <li><cite></cite><a href="${baseUrl}/tools.html" target="rightFrame">常用工具</a><i></i></li>
-            <li><cite></cite><a href="${baseUrl}/filelist.html" target="rightFrame">信息管理</a><i></i></li>
-            <li><cite></cite><a href="${baseUrl}/tab.html" target="rightFrame">Tab页</a><i></i></li>
-            <li><cite></cite><a href="${baseUrl}/error.html" target="rightFrame">404页面</a><i></i></li>
+            <li><cite></cite><a href="${baseUrl}/main/index.do" target="rightFrame">首页模版</a><i></i></li>
+            <li class="active"><cite></cite><a href="${baseUrl}/main/right.do" target="rightFrame">数据列表</a><i></i></li>
+            <li><cite></cite><a href="${baseUrl}/main/imgTable.do" target="rightFrame">图片数据表</a><i></i></li>
+            <li><cite></cite><a href="${baseUrl}/main/form.do" target="rightFrame">添加编辑</a><i></i></li>
+            <li><cite></cite><a href="${baseUrl}/main/imgList.do" target="rightFrame">图片列表</a><i></i></li>
+            <li><cite></cite><a href="${baseUrl}/main/imgListOne.do" target="rightFrame">自定义</a><i></i></li>
+            <li><cite></cite><a href="${baseUrl}/main/tools.do" target="rightFrame">常用工具</a><i></i></li>
+            <li><cite></cite><a href="${baseUrl}/main/fileList.do" target="rightFrame">信息管理</a><i></i></li>
+            <li><cite></cite><a href="${baseUrl}/main/tab.do" target="rightFrame">Tab页</a><i></i></li>
+            <li><cite></cite><a href="${baseUrl}/main/error.do" target="rightFrame">404页面</a><i></i></li>
         </ul>
     </dd>
     <dd>

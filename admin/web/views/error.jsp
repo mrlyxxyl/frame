@@ -33,7 +33,7 @@
 
     <p>看到这个提示，就自认倒霉吧!</p>
 
-    <div class="reindex"><a href="${baseUrl}/main.html" target="_parent">返回首页</a></div>
+    <div class="reindex"><a href="${baseUrl}/main/main.do" target="_parent">返回首页</a></div>
 </div>
 </body>
 </html>

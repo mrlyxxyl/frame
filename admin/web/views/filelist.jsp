@@ -14,7 +14,7 @@
     <span>位置：</span>
     <ul class="placeul">
         <li><a href="#">首页</a></li>
-        <li><a href="computer.html">文件管理</a></li>
+        <li><a href="${baseUrl}/main/computer.do">文件管理</a></li>
         <li><a href="#">列表</a></li>
     </ul>
 </div>
