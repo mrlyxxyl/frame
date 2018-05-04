@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>无标题文档</title>
+    <title>错误页面</title>
     <link href="${baseUrl}/css/style.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="${baseUrl}/js/jquery.js"></script>
 
@@ -33,7 +33,7 @@
 
     <p>看到这个提示，就自认倒霉吧!</p>
 
-    <div class="reindex"><a href="${baseUrl}/main/main.do" target="_parent">返回首页</a></div>
+    <div class="reindex"><a href="${baseUrl}/web/main/main.do" target="_parent">返回首页</a></div>
 </div>
 </body>
 </html>

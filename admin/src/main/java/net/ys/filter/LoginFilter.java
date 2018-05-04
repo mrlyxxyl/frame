@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebFilter(urlPatterns = "*.do")
+@WebFilter(urlPatterns = "/web/*")
 public final class LoginFilter implements Filter {
 
     @Override
@@ -18,9 +18,9 @@ public final class LoginFilter implements Filter {
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         Object admin = request.getSession().getAttribute("admin");
         if (admin == null) {
-            if (!request.getRequestURI().endsWith("admin/login.do")) {
+            if (!request.getRequestURI().endsWith("web/admin/login.do")) {
                 HttpServletResponse response = (HttpServletResponse) servletResponse;
-                response.sendRedirect(request.getContextPath() + "/admin/login.do");
+                response.sendRedirect(request.getContextPath() + "/web/admin/login.do");
             } else {
                 filterChain.doFilter(servletRequest, servletResponse);
             }

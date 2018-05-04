@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
-@RequestMapping(value = "user")
+@RequestMapping(value = "web/user")
 public class UserController {
 
     @Resource

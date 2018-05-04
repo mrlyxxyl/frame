@@ -11,7 +11,7 @@ import javax.servlet.http.HttpSession;
 import java.util.Map;
 
 @Controller
-@RequestMapping(value = "admin")
+@RequestMapping(value = "web/admin")
 public class AdminController {
 
     @Resource
@@ -28,7 +28,7 @@ public class AdminController {
         if (admin != null) {
             session.setAttribute("admin", admin);
         }
-        return "redirect:/main/main.do";
+        return "redirect:/web/main/main.do";
     }
 
     @RequestMapping(value = "loginOut", method = RequestMethod.GET)

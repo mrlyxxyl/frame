@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>网站后台管理系统HTML模板--模板之家 www.cssmoban.com</title>
+    <title>www.yongsn.com</title>
     <link href="${baseUrl}/css/style.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="${baseUrl}/js/jquery.js"></script>
 

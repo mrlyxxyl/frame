@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-@RequestMapping(value = "sys")
+@RequestMapping(value = "web/sys")
 public class SystemController {
 
     @Resource

@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>框架</title>
+    <title>登录</title>
     <link href="${baseUrl}/css/style.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="${baseUrl}/js/jquery.js"></script>
     <script src="${baseUrl}/js/cloud.js" type="text/javascript"></script>
@@ -47,7 +47,7 @@
     <span class="system_logo"></span>
 
     <div class="login_box">
-        <form action="${baseUrl}/admin/login.do" method="post">
+        <form action="${baseUrl}/web/admin/login.do" method="post">
             <ul>
                 <li><input name="username" type="text" class="login_user" value="admin"/></li>
                 <li><input name="password" type="password" class="login_pwd" value="password"/></li>

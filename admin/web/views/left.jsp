@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>无标题文档</title>
+    <title>导航栏</title>
     <link href="${baseUrl}/css/style.css" rel="stylesheet" type="text/css"/>
     <script language="JavaScript" src="${baseUrl}/js/jquery.js"></script>
 
@@ -40,16 +40,16 @@
             <span><img src="${baseUrl}/images/leftico01.png"/></span>管理信息
         </div>
         <ul class="menu_son">
-            <li><cite></cite><a href="${baseUrl}/main/index.do" target="rightFrame">首页模版</a><i></i></li>
-            <li class="active"><cite></cite><a href="${baseUrl}/main/right.do" target="rightFrame">数据列表</a><i></i></li>
-            <li><cite></cite><a href="${baseUrl}/main/imgTable.do" target="rightFrame">图片数据表</a><i></i></li>
-            <li><cite></cite><a href="${baseUrl}/main/form.do" target="rightFrame">添加编辑</a><i></i></li>
-            <li><cite></cite><a href="${baseUrl}/main/imgList.do" target="rightFrame">图片列表</a><i></i></li>
-            <li><cite></cite><a href="${baseUrl}/main/imgListOne.do" target="rightFrame">自定义</a><i></i></li>
-            <li><cite></cite><a href="${baseUrl}/main/tools.do" target="rightFrame">常用工具</a><i></i></li>
-            <li><cite></cite><a href="${baseUrl}/main/fileList.do" target="rightFrame">信息管理</a><i></i></li>
-            <li><cite></cite><a href="${baseUrl}/main/tab.do" target="rightFrame">Tab页</a><i></i></li>
-            <li><cite></cite><a href="${baseUrl}/main/error.do" target="rightFrame">404页面</a><i></i></li>
+            <li><cite></cite><a href="${baseUrl}/web/main/index.do" target="rightFrame">首页模版</a><i></i></li>
+            <li class="active"><cite></cite><a href="${baseUrl}/web/main/right.do" target="rightFrame">数据列表</a><i></i></li>
+            <li><cite></cite><a href="${baseUrl}/web/main/imgTable.do" target="rightFrame">图片数据表</a><i></i></li>
+            <li><cite></cite><a href="${baseUrl}/web/main/form.do" target="rightFrame">添加编辑</a><i></i></li>
+            <li><cite></cite><a href="${baseUrl}/web/main/imgList.do" target="rightFrame">图片列表</a><i></i></li>
+            <li><cite></cite><a href="${baseUrl}/web/main/imgListOne.do" target="rightFrame">图片表格</a><i></i></li>
+            <li><cite></cite><a href="${baseUrl}/web/main/tools.do" target="rightFrame">常用工具</a><i></i></li>
+            <li><cite></cite><a href="${baseUrl}/web/main/fileList.do" target="rightFrame">文件管理</a><i></i></li>
+            <li><cite></cite><a href="${baseUrl}/web/main/tab.do" target="rightFrame">Tab页</a><i></i></li>
+            <li><cite></cite><a href="${baseUrl}/web/main/error.do" target="rightFrame">404页面</a><i></i></li>
         </ul>
     </dd>
     <dd>
