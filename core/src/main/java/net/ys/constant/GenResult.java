@@ -18,6 +18,8 @@ public enum GenResult {
 
     NOT_LOGIN(1005, "未登录"),
 
+    NO_DATA_OR_INVALID(1006, "数据不存在或已过期，请刷新重试!"),
+
     UNKNOWN_ERROR(9999, "未知异常"),;
 
     public int msgCode;
