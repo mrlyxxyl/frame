@@ -1,16 +1,14 @@
-package net.ys.controller;
+package net.ys.utils;
 
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
-import org.springframework.stereotype.Component;
 
 /**
  * User: LiWenC
  * Date: 16-9-12
  */
-@Component
 public class ApplicationContextUtil implements ApplicationContextAware {
 
     private static ApplicationContext applicationContext;
@@ -20,7 +18,7 @@ public class ApplicationContextUtil implements ApplicationContextAware {
         this.applicationContext = applicationContext;
     }
 
-    public static <T> T getBean(String beanId, Class<T> clazz) {
+    public static <T> T getBean(String beanId) {
         return (T) applicationContext.getBean(beanId);
     }
 

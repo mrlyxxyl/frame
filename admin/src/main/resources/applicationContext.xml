@@ -18,6 +18,8 @@
         </property>
     </bean>
 
+    <bean class="net.ys.utils.ApplicationContextUtil"/>
+
     <!--数据源-->
     <import resource="application-db.xml"/>
 
