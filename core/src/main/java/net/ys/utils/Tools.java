@@ -4,6 +4,7 @@ import net.ys.constant.SysRegex;
 import net.ys.constant.X;
 
 import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.Random;
 import java.util.UUID;
 
@@ -14,10 +15,15 @@ import java.util.UUID;
 public class Tools {
 
     private static Random rand;
-    public static String KEY_PREFIX = "88_";
+    public static final String KEY_PREFIX = "_86668_";
+    static MessageDigest md5;
 
     static {
         rand = new Random();
+        try {
+            md5 = MessageDigest.getInstance("MD5");
+        } catch (NoSuchAlgorithmException e) {
+        }
     }
 
     /**
@@ -83,16 +89,15 @@ public class Tools {
     /**
      * MD5加密
      *
-     * @param key
+     * @param str
      * @return
      */
-    public static String genMD5(String key) {
+    public static String genMD5(String str) {
         try {
-            if (key == null || "".equals(key.trim())) {
+            if (str == null || "".equals(str.trim())) {
                 return "";
             }
-            MessageDigest md5 = MessageDigest.getInstance("MD5");
-            byte[] bs = md5.digest((KEY_PREFIX + key).getBytes(X.ENCODING.U));
+            byte[] bs = md5.digest((KEY_PREFIX + str).getBytes(X.ENCODING.U));
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < bs.length; i++) {
                 sb.append(Character.forDigit((bs[i] >>> 4) & 0x0F, 16)).append(Character.forDigit(bs[i] & 0x0F, 16));

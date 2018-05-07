@@ -27,22 +27,21 @@ public final class SysFilter implements Filter {
         }
     }
 
-    public void destroy() {
-    }
-
     private boolean validParams(ServletRequest request) {
         String time = request.getParameter("t");//时间戳
-        String key = request.getParameter("k");//加密秘钥
         String randomStr = request.getParameter("r");//原始加密字符串
         String md5Str = request.getParameter("m");//前端返回的md5加密串
 
-        if (Tools.isNotEmpty(key, time, randomStr, md5Str)) {
-            String m = Tools.genMD5(randomStr + key + time);
+        if (Tools.isNotEmpty(time, randomStr, md5Str)) {
+            String m = Tools.genMD5(randomStr + time);
             if (m.equals(md5Str)) {
                 return true;
             }
         }
 
         return false;
+    }
+
+    public void destroy() {
     }
 }
