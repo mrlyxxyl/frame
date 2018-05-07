@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping(value = "int/user", produces = {"application/json;charset=utf-8"})
+@RequestMapping(value = "api/user", produces = {"application/json;charset=utf-8"})
 @Api(value = "user-api", description = "用户接口")
 public class UserController {
 

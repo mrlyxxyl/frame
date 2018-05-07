@@ -2,8 +2,7 @@ package net.ys.filter;
 
 import net.ys.constant.GenResult;
 import net.ys.constant.X;
-import net.ys.controller.ApplicationContextUtil;
-import net.ys.service.CommonService;
+import net.ys.utils.Tools;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
@@ -11,24 +10,29 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebFilter(urlPatterns = "/int/*")
+@WebFilter(urlPatterns = "/api/*")
 public final class SysFilter implements Filter {
-
-    private CommonService commonService;
 
     public void init(FilterConfig filterConfig) throws ServletException {
     }
 
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-        if (commonService == null) {
-            commonService = ApplicationContextUtil.getBean("commonService", CommonService.class);
-        }
 
         HttpServletRequest req = (HttpServletRequest) request;
-        String time = req.getParameter("t");
-        String key = req.getParameter("k");
-        String md5Str = req.getParameter("m");
-        if (!commonService.verifyIntParams(key, time, md5Str)) {
+        String time = req.getParameter("t");//时间戳
+        String key = req.getParameter("k");//加密秘钥
+        String randomStr = req.getParameter("r");//原始加密字符串
+        String md5Str = req.getParameter("m");//前端返回的md5加密串
+
+        boolean flag = false;
+        if (Tools.isNotEmpty(key, time, randomStr, md5Str)) {
+            String m = Tools.genMD5(randomStr + key + time);
+            if (m.equals(md5Str)) {
+                flag = true;
+            }
+        }
+
+        if (!flag) {
             response.setCharacterEncoding(X.ENCODING.U);
             response.setContentType("application/json; charset=" + X.ENCODING.U);
             HttpServletResponse res = (HttpServletResponse) response;

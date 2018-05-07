@@ -11,10 +11,9 @@ number is ${number}<br/>
 date is ${time?date}<br/>
 time is ${time?time}<br/>
 datetime is ${time?datetime}<br/>
-datetime is ${time?string("yyyy-MM-dd HH:mm:ss")}
-
+datetime is ${time?string("yyyy-MM-dd HH:mm:ss")}<br/>
 <!--time为long类型毫秒值的转括号加叹号为屏蔽null值-->
-datetime is ${(1489388281864?number_to_datetime)!}
+<#if (td > 0)>${(td?number_to_datetime)!}</#if>
 
 <#list list as obj>
     <li>${obj}</li>
@@ -90,7 +89,7 @@ ${content?trim}<br/>
 
 
 ---------------------<br/>
-<#if (age > 60)>老年人</#if>
+<#if (age > 60)> 老年人</#if>
 <br/>
 <#noparse>
     ${name}

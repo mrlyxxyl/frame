@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.*;
 
 @RestController
-@RequestMapping(value = "int/share", produces = {"application/json;charset=utf-8"})
+@RequestMapping(value = "share", produces = {"application/json;charset=utf-8"})
 @Api(value = "share-api", description = "分享接口")
 public class ShareController {
 
@@ -22,6 +22,7 @@ public class ShareController {
 
         mv.addObject("time", new Date());
         mv.addObject("number", 44444.44446f);
+        mv.addObject("td", 0);
 
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("name", "name");
