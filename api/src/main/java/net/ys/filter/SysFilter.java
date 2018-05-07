@@ -6,7 +6,6 @@ import net.ys.utils.Tools;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
@@ -17,21 +16,7 @@ public final class SysFilter implements Filter {
     }
 
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-
-        HttpServletRequest req = (HttpServletRequest) request;
-        String time = req.getParameter("t");//时间戳
-        String key = req.getParameter("k");//加密秘钥
-        String randomStr = req.getParameter("r");//原始加密字符串
-        String md5Str = req.getParameter("m");//前端返回的md5加密串
-
-        boolean flag = false;
-        if (Tools.isNotEmpty(key, time, randomStr, md5Str)) {
-            String m = Tools.genMD5(randomStr + key + time);
-            if (m.equals(md5Str)) {
-                flag = true;
-            }
-        }
-
+        boolean flag = validParams(request);
         if (!flag) {
             response.setCharacterEncoding(X.ENCODING.U);
             response.setContentType("application/json; charset=" + X.ENCODING.U);
@@ -43,5 +28,21 @@ public final class SysFilter implements Filter {
     }
 
     public void destroy() {
+    }
+
+    private boolean validParams(ServletRequest request) {
+        String time = request.getParameter("t");//时间戳
+        String key = request.getParameter("k");//加密秘钥
+        String randomStr = request.getParameter("r");//原始加密字符串
+        String md5Str = request.getParameter("m");//前端返回的md5加密串
+
+        if (Tools.isNotEmpty(key, time, randomStr, md5Str)) {
+            String m = Tools.genMD5(randomStr + key + time);
+            if (m.equals(md5Str)) {
+                return true;
+            }
+        }
+
+        return false;
     }
 }
