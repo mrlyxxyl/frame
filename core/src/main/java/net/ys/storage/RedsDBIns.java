@@ -1,6 +1,6 @@
 package net.ys.storage;
 
-import org.apache.log4j.Logger;
+import net.ys.utils.LogUtil;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.exceptions.JedisException;
@@ -17,12 +17,10 @@ public enum RedsDBIns {
 
     INSTANCE;
 
-    private Logger log;
     private volatile ConcurrentHashMap<RedsServer, JedisPool> redsPoolContainer;
     private final TreeMap<String, AtomicInteger> redsClientCounterMap;
 
     RedsDBIns() {
-        this.log = Logger.getLogger(RedsDBIns.class);
         this.redsPoolContainer = new ConcurrentHashMap<RedsServer, JedisPool>();
         this.redsClientCounterMap = new TreeMap<String, AtomicInteger>();
     }
@@ -77,12 +75,11 @@ public enum RedsDBIns {
             return j;
         } catch (JedisException e) {
             this.releaseBrokenReds(server, j);
-            log.warn("[Release Broken]Reds Connect Failed for " + server.getHost() + ":" + server.getPort() + ",timeout=" + server.getTimeout(), e);
-            return null;
+            LogUtil.warn(e);
         } catch (Exception e) {
-            log.warn("Reds Connect Failed for " + server.getHost() + ":" + server.getPort() + ",timeout=" + server.getTimeout(), e);
-            return null;
+            LogUtil.warn(e);
         }
+        return null;
     }
 
     public void release(RedsServer server, Jedis jedis) {
@@ -99,7 +96,7 @@ public enum RedsDBIns {
                 this.redsClientCounterMap.get(server.name() + ".release").incrementAndGet();
             }
         } else {
-            log.warn("[Reds Release], pool=" + pool + ";reds=" + jedis);
+            LogUtil.info("[Reds Release], pool=" + pool + ";reds=" + jedis);
         }
     }
 
@@ -118,9 +115,9 @@ public enum RedsDBIns {
                 this.redsClientCounterMap.get(server.name() + ".broken").incrementAndGet();
             }
         } else {
-            log.warn("[Reds Release Broken], pool=" + pool + ";reds=" + jedis);
+            LogUtil.info("[Reds Release Broken], pool=" + pool + ";reds=" + jedis);
         }
-        log.warn("[Reds Release Broken]Broken Reds released : " + jedis);
+        LogUtil.info("[Reds Release Broken]Broken Reds released : " + jedis);
     }
 
     public Map<String, AtomicInteger> getRedsStatus() {

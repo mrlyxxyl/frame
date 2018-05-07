@@ -1,12 +1,10 @@
 package net.ys.storage;
 
-import org.apache.log4j.Logger;
+import net.ys.utils.LogUtil;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.exceptions.JedisException;
 
 public class RedsExecutor<T> {
-
-    static Logger log = Logger.getLogger(RedsExecutor.class);
 
     public RedsExecutor() {
     }
@@ -20,14 +18,14 @@ public class RedsExecutor<T> {
                 rst = redsRunner.run(j);
                 RedsDBIns.INSTANCE.release(redsServer, j);
             } else {
-                log.warn("Stop process as Reds Connect Failed for " + redsServer.getHost() + ":" + redsServer.getPort() + ",timeout=" + redsServer.getTimeout());
+                LogUtil.info("Stop process as Reds Connect Failed for " + redsServer.getHost() + ":" + redsServer.getPort() + ",timeout=" + redsServer.getTimeout());
             }
         } catch (JedisException e) {
             RedsDBIns.INSTANCE.releaseBrokenReds(redsServer, j);
-            log.error(e, e);
+            LogUtil.error(e);
         } catch (Exception e) {
             RedsDBIns.INSTANCE.release(redsServer, j);
-            log.error(e, e);
+            LogUtil.error(e);
         }
         return rst;
     }

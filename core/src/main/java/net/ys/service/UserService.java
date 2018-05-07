@@ -4,7 +4,6 @@ import net.ys.bean.User;
 import net.ys.cache.BaseCache;
 import net.ys.cache.UserCache;
 import net.ys.dao.UserDao;
-import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -12,8 +11,6 @@ import java.util.List;
 
 @Service
 public class UserService {
-
-    private static Logger logger = Logger.getLogger(UserService.class);
 
     @Resource
     private UserDao userDao;

@@ -7,7 +7,7 @@ import net.ys.bean.User;
 import net.ys.constant.GenResult;
 import net.ys.response.UserResponse;
 import net.ys.service.UserService;
-import org.apache.log4j.Logger;
+import net.ys.utils.LogUtil;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -18,8 +18,6 @@ import java.util.Map;
 @RequestMapping(value = "api/user", produces = {"application/json;charset=utf-8"})
 @Api(value = "user-api", description = "用户接口")
 public class UserController {
-
-    private static Logger logger = Logger.getLogger(UserController.class);
 
     @Resource
     private UserService userService;
@@ -33,7 +31,7 @@ public class UserController {
             List<User> users = userService.queryUsers(page, pageSize);
             return GenResult.SUCCESS.genResult(users);
         } catch (Exception e) {
-            logger.error(e);
+            LogUtil.error(e);
             return GenResult.UNKNOWN_ERROR.genResult();
         }
     }
