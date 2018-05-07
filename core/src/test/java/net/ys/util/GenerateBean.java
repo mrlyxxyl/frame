@@ -84,7 +84,7 @@ public class GenerateBean {
 
                     if ("varchar".equals(columnClassName) || "mediumtext".equals(columnClassName)) {
                         attributeType = "String";
-                    } else if ("int".equals(columnClassName)) {
+                    } else if ("int".equals(columnClassName) || "tinyint".equals(columnClassName)) {
                         attributeType = "int";
                     } else if ("bigint".equals(columnClassName)) {
                         attributeType = "long";
@@ -104,7 +104,7 @@ public class GenerateBean {
 
                     if ("varchar".equals(columnClassName) || "mediumtext".equals(columnClassName)) {
                         attributeType = "String";
-                    } else if ("int".equals(columnClassName)) {
+                    } else if ("int".equals(columnClassName) || "tinyint".equals(columnClassName)) {
                         attributeType = "int";
                     } else if ("bigint".equals(columnClassName)) {
                         attributeType = "long";
@@ -156,7 +156,7 @@ public class GenerateBean {
 
             if ("varchar".equals(columnClassName) || "mediumtext".equals(columnClassName)) {
                 attributeType = "String";
-            } else if ("int".equals(columnClassName)) {
+            } else if ("int".equals(columnClassName) || "tinyint".equals(columnClassName)) {
                 attributeType = "int";
             } else if ("bigint".equals(columnClassName)) {
                 attributeType = "long";
@@ -176,7 +176,7 @@ public class GenerateBean {
 
             if ("varchar".equals(columnClassName) || "mediumtext".equals(columnClassName)) {
                 attributeType = "String";
-            } else if ("int".equals(columnClassName)) {
+            } else if ("int".equals(columnClassName) || "tinyint".equals(columnClassName)) {
                 attributeType = "int";
             } else if ("bigint".equals(columnClassName)) {
                 attributeType = "long";

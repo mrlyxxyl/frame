@@ -68,7 +68,7 @@ public class GenerateBeanRespMapper {
 
                     if ("varchar".equals(columnClassName) || "mediumtext".equals(columnClassName)) {
                         attributeType = "String";
-                    } else if ("int".equals(columnClassName)) {
+                    } else if ("int".equals(columnClassName) || "tinyint".equals(columnClassName)) {
                         attributeType = "int";
                     } else if ("bigint".equals(columnClassName)) {
                         attributeType = "long";
@@ -88,7 +88,7 @@ public class GenerateBeanRespMapper {
 
                     if ("varchar".equals(columnClassName) || "mediumtext".equals(columnClassName)) {
                         attributeType = "String";
-                    } else if ("int".equals(columnClassName)) {
+                    } else if ("int".equals(columnClassName) || "tinyint".equals(columnClassName)) {
                         attributeType = "int";
                     } else if ("bigint".equals(columnClassName)) {
                         attributeType = "long";
