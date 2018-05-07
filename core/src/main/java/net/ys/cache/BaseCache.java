@@ -41,7 +41,7 @@ public class BaseCache {
                 return false;
             }
         };
-        return new RedsExecutor<Boolean>().exe(rr, RedsServer.Core_Master_Server);
+        return new RedsExecutor<Boolean>().exe(rr, RedsServer.MASTER);
     }
 
     /**
@@ -66,7 +66,7 @@ public class BaseCache {
                 return null;
             }
         };
-        return new RedsExecutor<T>().exe(rr, RedsServer.Core_Master_Server);
+        return new RedsExecutor<T>().exe(rr, RedsServer.MASTER);
     }
 
     /**
@@ -86,7 +86,7 @@ public class BaseCache {
                 return false;
             }
         };
-        return new RedsExecutor<Boolean>().exe(rr, RedsServer.Core_Master_Server);
+        return new RedsExecutor<Boolean>().exe(rr, RedsServer.MASTER);
     }
 
     /**
@@ -107,7 +107,7 @@ public class BaseCache {
                 return false;
             }
         };
-        return new RedsExecutor<Boolean>().exe(rr, RedsServer.Core_Master_Server);
+        return new RedsExecutor<Boolean>().exe(rr, RedsServer.MASTER);
     }
 
     /**
@@ -129,7 +129,7 @@ public class BaseCache {
                 return false;
             }
         };
-        return new RedsExecutor<Boolean>().exe(rr, RedsServer.Core_Master_Server);
+        return new RedsExecutor<Boolean>().exe(rr, RedsServer.MASTER);
     }
 
     /**
@@ -154,7 +154,7 @@ public class BaseCache {
                 return null;
             }
         };
-        return new RedsExecutor<T>().exe(rr, RedsServer.Core_Master_Server);
+        return new RedsExecutor<T>().exe(rr, RedsServer.MASTER);
     }
 
     /**
@@ -180,7 +180,7 @@ public class BaseCache {
                 return list;
             }
         };
-        return new RedsExecutor<List<T>>().exe(rr, RedsServer.Core_Master_Server);
+        return new RedsExecutor<List<T>>().exe(rr, RedsServer.MASTER);
     }
 
     /**
@@ -206,7 +206,7 @@ public class BaseCache {
                 return list;
             }
         };
-        return new RedsExecutor<List<T>>().exe(rr, RedsServer.Core_Master_Server);
+        return new RedsExecutor<List<T>>().exe(rr, RedsServer.MASTER);
     }
 
     /**
@@ -226,7 +226,7 @@ public class BaseCache {
                 return 0L;
             }
         };
-        return new RedsExecutor<Long>().exe(rr, RedsServer.Core_Master_Server);
+        return new RedsExecutor<Long>().exe(rr, RedsServer.MASTER);
     }
 
     /**
@@ -247,6 +247,6 @@ public class BaseCache {
                 return false;
             }
         };
-        return new RedsExecutor<Boolean>().exe(rr, RedsServer.Core_Master_Server);
+        return new RedsExecutor<Boolean>().exe(rr, RedsServer.MASTER);
     }
 }

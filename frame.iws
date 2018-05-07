@@ -2,23 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75feac18-d80f-4fed-b677-524f84bc19a8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/resources/config.properties" afterPath="$PROJECT_DIR$/api/src/main/resources/config.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/net/ys/cache/BaseCache.java" afterPath="$PROJECT_DIR$/core/src/main/java/net/ys/cache/BaseCache.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/net/ys/cache/CommonCache.java" afterPath="$PROJECT_DIR$/core/src/main/java/net/ys/cache/CommonCache.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/net/ys/storage/RedsServer.java" afterPath="$PROJECT_DIR$/core/src/main/java/net/ys/storage/RedsServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/net/ys/cache/SystemCache.java" afterPath="$PROJECT_DIR$/core/src/main/java/net/ys/cache/SystemCache.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/net/ys/cache/UserCache.java" afterPath="$PROJECT_DIR$/core/src/main/java/net/ys/cache/UserCache.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame.iws" afterPath="$PROJECT_DIR$/frame.iws" />
     </list>
     <ignored path="frame.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525676766450" ignored="false" />
+    <file path="/Dummy.txt" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525677216794" ignored="false" />
     <file path="/top.jsp" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525393255062" ignored="false" />
     <file path="/MainController.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1520045673984" ignored="false" />
     <file path="/AdminController.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1520046035027" ignored="false" />
     <file path="/error.jsp" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525392924138" ignored="false" />
     <file path="/filelist.jsp" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1520046176195" ignored="false" />
     <file path="/left.jsp" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525393350506" ignored="false" />
-    <file path="$PROJECT_DIR$/core/src/main/java/net/ys/cache/BaseCache.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525391052206" ignored="false" />
     <file path="$PROJECT_DIR$/admin/web/WEB-INF/web.xml" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525391052206" ignored="false" />
-    <file path="$PROJECT_DIR$/core/src/main/java/net/ys/cache/CommonCache.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525391052206" ignored="false" />
-    <file path="$PROJECT_DIR$/core/src/main/java/net/ys/cache/SystemCache.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525391052206" ignored="false" />
-    <file path="$PROJECT_DIR$/core/src/main/java/net/ys/cache/UserCache.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525391052206" ignored="false" />
     <file path="$PROJECT_DIR$/api/src/main/java/net/ys/common/ApplicationSwaggerConfig.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525391052206" ignored="false" />
     <file path="/GenResult.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525391114103" ignored="false" />
     <file path="/computer.jsp" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525392901220" ignored="false" />
@@ -117,42 +117,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FileType.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/net/ys/constant/FileType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="14" selection-start="136" selection-end="146" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileUploadServlet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/file/src/main/java/net/ys/controller/FileUploadServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="7" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/file/src/main/java/net/ys/utils/ImageHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="455" selection-end="455" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImgCompress.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/file/src/main/java/net/ys/utils/ImgCompress.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="readme.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/file/web/img/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
@@ -207,10 +171,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.properties" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="config.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/src/main/resources/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="44" selection-start="140" selection-end="140" vertical-scroll-proportion="0.10806917">
+            <state line="10" column="28" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedsServer.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/net/ys/storage/RedsServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="73" selection-start="763" selection-end="763" vertical-scroll-proportion="0.7709251">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseCache.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/net/ys/cache/BaseCache.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="13" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedsRunner.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/net/ys/storage/RedsRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="17" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserCache.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/net/ys/cache/UserCache.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="68" selection-start="1361" selection-end="1361" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -234,7 +234,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/admin/web/views/error.jsp" />
         <option value="$PROJECT_DIR$/admin/web/views/fileList.jsp" />
         <option value="$PROJECT_DIR$/admin/web/views/imgListOne.jsp" />
         <option value="$PROJECT_DIR$/admin/web/views/tools.jsp" />
@@ -265,6 +264,7 @@
         <option value="$PROJECT_DIR$/admin/src/main/java/net/ys/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/admin/web/views/top.jsp" />
         <option value="$PROJECT_DIR$/api/src/main/resources/config.properties" />
+        <option value="$PROJECT_DIR$/core/src/main/java/net/ys/storage/RedsServer.java" />
       </list>
     </option>
   </component>
@@ -332,6 +332,116 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ys" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -373,6 +483,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ys" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -811,7 +929,11 @@
       <created>1525676743589</created>
       <updated>1525676743589</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update">
+      <created>1525677218747</created>
+      <updated>1525677218747</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -906,34 +1028,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/net/ys/filter/SysFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="62" selection-start="1148" selection-end="1155" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/net/ys/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="22" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/net/ys/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/net/ys/storage/RedsDBIns.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="9" selection-start="4237" selection-end="4237" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/net/ys/storage/RedsExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="27" selection-start="970" selection-end="970" vertical-scroll-proportion="0.0">
@@ -1134,9 +1228,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/net/ys/storage/RedsRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="17" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/net/ys/cache/UserCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="68" selection-start="1361" selection-end="1361" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/net/ys/cache/BaseCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="13" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/src/main/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="44" selection-start="140" selection-end="140" vertical-scroll-proportion="0.10806917">
+        <state line="10" column="28" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/net/ys/storage/RedsServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="73" selection-start="763" selection-end="763" vertical-scroll-proportion="0.7709251">
           <folding />
         </state>
       </provider>

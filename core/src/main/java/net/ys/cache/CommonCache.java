@@ -34,7 +34,7 @@ public class CommonCache {
                 return 0L;
             }
         };
-        return new RedsExecutor<Long>().exe(rr, RedsServer.Core_Master_Server);
+        return new RedsExecutor<Long>().exe(rr, RedsServer.MASTER);
     }
 
     /**
@@ -55,6 +55,6 @@ public class CommonCache {
                 return false;
             }
         };
-        return new RedsExecutor<Boolean>().exe(rr, RedsServer.Core_Master_Server);
+        return new RedsExecutor<Boolean>().exe(rr, RedsServer.MASTER);
     }
 }

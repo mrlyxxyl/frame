@@ -6,7 +6,7 @@ import redis.clients.jedis.JedisPoolConfig;
 
 public enum RedsServer {
 
-    Core_Master_Server(PropertyUtil.get("reds.host"), Integer.parseInt(PropertyUtil.get("reds.port")), Integer.parseInt(PropertyUtil.get("reds.timeout")), PropertyUtil.get("reds.password"));
+    MASTER(PropertyUtil.get("reds.host"), Integer.parseInt(PropertyUtil.get("reds.port")), Integer.parseInt(PropertyUtil.get("reds.timeout")), PropertyUtil.get("reds.password"));
 
     private String host;
     private int port;
@@ -14,7 +14,7 @@ public enum RedsServer {
     private String password;
     private JedisPoolConfig config;
 
-    RedsServer(String hostName, int port, int timeout,String password) {
+    RedsServer(String hostName, int port, int timeout, String password) {
         this.host = hostName;
         this.port = port;
         this.timeout = timeout;

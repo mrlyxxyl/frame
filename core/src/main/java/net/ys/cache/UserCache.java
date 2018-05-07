@@ -38,6 +38,6 @@ public class UserCache {
                 return false;
             }
         };
-        return new RedsExecutor<Boolean>().exe(rr, RedsServer.Core_Master_Server);
+        return new RedsExecutor<Boolean>().exe(rr, RedsServer.MASTER);
     }
 }
