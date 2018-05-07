@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75feac18-d80f-4fed-b677-524f84bc19a8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/net/ys/utils/LogUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/net/ys/controller/FileController.java" afterPath="$PROJECT_DIR$/api/src/main/java/net/ys/controller/FileController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/net/ys/storage/RedsDBIns.java" afterPath="$PROJECT_DIR$/core/src/main/java/net/ys/storage/RedsDBIns.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/net/ys/storage/RedsExecutor.java" afterPath="$PROJECT_DIR$/core/src/main/java/net/ys/storage/RedsExecutor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/net/ys/controller/UserController.java" afterPath="$PROJECT_DIR$/api/src/main/java/net/ys/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/net/ys/service/UserService.java" afterPath="$PROJECT_DIR$/core/src/main/java/net/ys/service/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/src/main/java/net/ys/controller/AdminController.java" afterPath="$PROJECT_DIR$/admin/src/main/java/net/ys/controller/AdminController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/resources/config.properties" afterPath="$PROJECT_DIR$/api/src/main/resources/config.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame.iws" afterPath="$PROJECT_DIR$/frame.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/web/views/top.jsp" afterPath="$PROJECT_DIR$/admin/web/views/top.jsp" />
     </list>
     <ignored path="frame.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525676152925" ignored="false" />
+    <file path="/Dummy.txt" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525676597994" ignored="false" />
     <file path="/top.jsp" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525393255062" ignored="false" />
     <file path="/MainController.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1520045673984" ignored="false" />
     <file path="/AdminController.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1520046035027" ignored="false" />
@@ -58,11 +54,12 @@
     <file path="/ThreeService.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525672448977" ignored="false" />
     <file path="/TwoService.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525672511746" ignored="false" />
     <file path="/Tools.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525674772947" ignored="false" />
-    <file path="/a.dummy" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525676185644" ignored="false" />
+    <file path="/a.dummy" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525676695878" ignored="false" />
     <file path="/FileController.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525676202808" ignored="false" />
     <file path="/RedsExecutor.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525676468168" ignored="false" />
     <file path="/LogUtil.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525676305025" ignored="false" />
     <file path="/RedsDBIns.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525676427384" ignored="false" />
+    <file path="$PROJECT_DIR$/../dcenter/admin/web/views/footer.jsp" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525676589420" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,19 +191,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminController.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AdminController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/src/main/java/net/ys/controller/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="451" selection-end="451" vertical-scroll-proportion="0.2857143">
+            <state line="34" column="24" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/net/ys/controller/FileController.java">
+      <file leaf-file-name="top.jsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/web/views/top.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="29" selection-start="1502" selection-end="1519" vertical-scroll-proportion="0.0">
+            <state line="52" column="48" selection-start="2324" selection-end="2324" vertical-scroll-proportion="0.6081505">
               <folding />
             </state>
           </provider>
@@ -230,11 +227,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/admin/web/views/default.jsp" />
         <option value="$PROJECT_DIR$/admin/web/views/error.jsp" />
         <option value="$PROJECT_DIR$/admin/web/views/fileList.jsp" />
         <option value="$PROJECT_DIR$/admin/web/views/imgListOne.jsp" />
-        <option value="$PROJECT_DIR$/admin/web/views/top.jsp" />
         <option value="$PROJECT_DIR$/admin/web/views/tools.jsp" />
         <option value="$PROJECT_DIR$/admin/web/views/tab.jsp" />
         <option value="$PROJECT_DIR$/admin/web/views/right.jsp" />
@@ -261,6 +256,8 @@
         <option value="$PROJECT_DIR$/core/src/main/java/net/ys/utils/LogUtil.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/net/ys/storage/RedsDBIns.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/net/ys/storage/RedsExecutor.java" />
+        <option value="$PROJECT_DIR$/admin/src/main/java/net/ys/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/admin/web/views/top.jsp" />
       </list>
     </option>
   </component>
@@ -553,6 +550,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1057,17 +1086,21 @@
       <created>1525674912583</created>
       <updated>1525674912583</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update">
+      <created>1525676514649</created>
+      <updated>1525676514649</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33564815" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16550925" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18981482" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1083,7 +1116,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298611" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22582619" sideWeight="0.6643519" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22582619" sideWeight="0.8344907" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1152,11 +1185,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/net/ys/constant/SysRegex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="12" selection-start="87" selection-end="87" vertical-scroll-proportion="0.24787535" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/net/ys/constant/SysEnumCode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="12" selection-start="90" selection-end="90" vertical-scroll-proportion="0.24787535" />
@@ -1365,7 +1393,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/main/java/net/ys/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="451" selection-end="451" vertical-scroll-proportion="0.2857143">
+        <state line="34" column="24" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/web/views/top.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="48" selection-start="2324" selection-end="2324" vertical-scroll-proportion="0.6081505">
           <folding />
         </state>
       </provider>

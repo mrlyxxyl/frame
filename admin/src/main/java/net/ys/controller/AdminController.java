@@ -31,8 +31,8 @@ public class AdminController {
         return "redirect:/web/main/main.do";
     }
 
-    @RequestMapping(value = "loginOut", method = RequestMethod.GET)
-    public String loginOut(HttpSession session) {
+    @RequestMapping(value = "logout", method = RequestMethod.GET)
+    public String logout(HttpSession session) {
         session.removeAttribute("admin");
         return "login";
     }

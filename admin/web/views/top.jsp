@@ -50,7 +50,7 @@
     <ul>
         <li><span><img src="${baseUrl}/images/help.png" title="帮助" class="helpimg"/></span><a href="#">帮助</a></li>
         <li><a href="#">关于</a></li>
-        <li><a href="${baseUrl}/web/admin/loginOut.do" target="_parent">退出</a></li>
+        <li><a href="${baseUrl}/web/admin/logout.do" target="_parent">退出</a></li>
     </ul>
     <div class="user">
         <span>admin</span>
