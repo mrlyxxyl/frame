@@ -1,5 +1,6 @@
 package net.ys.bean;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.msgpack.annotation.Message;
 
 import java.io.Serializable;
@@ -10,6 +11,7 @@ import java.io.Serializable;
 @Message
 public class SysEnum implements Serializable {
 
+    @JsonProperty(value = "eid")
     private int id;    //主键
 
     private String name;    //枚举名称
