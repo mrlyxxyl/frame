@@ -19,4 +19,7 @@
     <bean class="net.ys.utils.ApplicationContextUtil"/>
 
     <import resource="application_db.xml"/>
+
+    <!--消息队列-->
+    <import resource="application-mq.xml"/>
 </beans>

@@ -14,5 +14,6 @@
         <module>../api</module>
         <module>../admin</module>
         <module>../core</module>
+        <module>../msg</module>
     </modules>
 </project>
