@@ -475,6 +475,6 @@ public class TimeUtil {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        System.out.println(nextYearMillisecond());
+        LogUtil.print(nextYearMillisecond());
     }
 }

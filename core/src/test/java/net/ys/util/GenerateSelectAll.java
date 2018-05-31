@@ -1,5 +1,7 @@
 package net.ys.util;
 
+import net.ys.utils.LogUtil;
+
 import java.io.IOException;
 import java.sql.*;
 
@@ -37,6 +39,6 @@ public class GenerateSelectAll {
         sb.deleteCharAt(sb.length() - 1);
         sb.deleteCharAt(sb.length() - 1);
         sb.append(" FROM " + tableName);
-        System.out.println(sb.toString());
+        LogUtil.print(sb.toString());
     }
 }

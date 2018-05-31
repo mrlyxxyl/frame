@@ -17,6 +17,7 @@
     </bean>
 
     <bean class="net.ys.utils.ApplicationContextUtil"/>
+    <bean name="file/Upload/Util" class="net.ys.utils.FileUploadUtil"/>
 
     <import resource="application_db.xml"/>
 

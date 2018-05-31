@@ -18,15 +18,7 @@ public class LogUtil {
         log.info(msg);
     }
 
-    public static void debug(Object msg) {
-        log.debug(msg);
-    }
-
-    public static void fatal(Exception e) {
-        log.fatal(e, e);
-    }
-
-    public static void warn(Exception e) {
-        log.warn(e, e);
+    public static void print(Object msg) {
+        System.out.println(msg);
     }
 }

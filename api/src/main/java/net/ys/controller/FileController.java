@@ -26,7 +26,7 @@ public class FileController {
         try {
             long start = System.currentTimeMillis();
             JSONObject result = FileUploadUtil.upload(FileType.HEAD_IMG.path, file.getOriginalFilename(), Tools.genImgFileName(), file.getInputStream(), "1");
-            System.out.println(System.currentTimeMillis() - start);
+            LogUtil.print(System.currentTimeMillis() - start);
             if (result.optBoolean("result")) {
                 return GenResult.SUCCESS.genResult();
             }

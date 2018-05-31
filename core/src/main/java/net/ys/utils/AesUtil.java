@@ -63,7 +63,7 @@ public class AesUtil {
 
     public static void main(String[] args) throws Exception {
         String str = encryptAES("hello");
-        System.out.println(str);
-        System.out.println(decryptAES(str));
+        LogUtil.print(str);
+        LogUtil.print(decryptAES(str));
     }
 }

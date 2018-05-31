@@ -24,7 +24,7 @@ public class ConsumeOne implements MessageListener {
         try {
             byte[] data = message.getBody();
             User user = msgPack.read(data, User.class);
-            System.out.println(user);
+            LogUtil.print(user);
         } catch (Exception e) {
             LogUtil.error(e);
         }

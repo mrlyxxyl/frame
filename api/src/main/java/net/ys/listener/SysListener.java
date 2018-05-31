@@ -1,5 +1,7 @@
 package net.ys.listener;
 
+import net.ys.utils.LogUtil;
+
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
@@ -13,11 +15,11 @@ public class SysListener implements ServletContextListener {
 
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
-        System.out.println("--- contextInitialized  ---");
+        LogUtil.print("--- contextInitialized  ---");
     }
 
     @Override
     public void contextDestroyed(ServletContextEvent servletContextEvent) {
-        System.out.println("--- contextDestroyed  ---");
+        LogUtil.print("--- contextDestroyed  ---");
     }
 }

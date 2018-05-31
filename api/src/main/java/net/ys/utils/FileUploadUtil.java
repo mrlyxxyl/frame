@@ -27,10 +27,10 @@ public class FileUploadUtil {
     /**
      * 文件上传工具
      *
-     * @param type         文件类型，eg:h->head_img, s->system
-     * @param fileName     文件原始名称
-     * @param fileAlias    文件别名:由业务系统生成
-     * @param stream       文件流
+     * @param type          文件类型，eg:h->head_img, s->system
+     * @param fileName      文件原始名称
+     * @param fileAlias     文件别名:由业务系统生成
+     * @param stream        文件流
      * @param needThumbnail 是否需要生成缩略图 0-不需要/1-需要
      * @throws IOException
      */
@@ -69,6 +69,6 @@ public class FileUploadUtil {
     public static void main(String[] args) throws IOException {
         String fileAlias = System.currentTimeMillis() + "_" + random.nextInt(100);
         JSONObject result = upload("h", "test.png", fileAlias, new FileInputStream("e:/test.png"), "1");
-        System.out.println(result.toString());
+        LogUtil.print(result.toString());
     }
 }

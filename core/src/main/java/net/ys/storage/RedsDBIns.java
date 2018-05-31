@@ -75,9 +75,9 @@ public enum RedsDBIns {
             return j;
         } catch (JedisException e) {
             this.releaseBrokenReds(server, j);
-            LogUtil.warn(e);
+            LogUtil.error(e);
         } catch (Exception e) {
-            LogUtil.warn(e);
+            LogUtil.error(e);
         }
         return null;
     }
