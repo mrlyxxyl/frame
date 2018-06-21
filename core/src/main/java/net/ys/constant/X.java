@@ -19,6 +19,14 @@ public interface X {
     }
 
     /**
+     * 极光推送配置
+     */
+    interface J_PUSH {
+        String APP_KEY = "f28070a35ea65b3086839a96";
+        String MASTER_SECRET = "e433a430ebe0229e5beb40d5";
+    }
+
+    /**
      * 编码
      */
     interface ENCODING {

@@ -1,0 +1,356 @@
+package net.ys.push;
+
+import cn.jiguang.common.resp.APIConnectionException;
+import cn.jiguang.common.resp.APIRequestException;
+import cn.jiguang.common.resp.DefaultResult;
+import cn.jpush.api.JPushClient;
+import cn.jpush.api.device.TagAliasResult;
+import cn.jpush.api.push.PushResult;
+import cn.jpush.api.push.model.Message;
+import cn.jpush.api.push.model.Options;
+import cn.jpush.api.push.model.Platform;
+import cn.jpush.api.push.model.PushPayload;
+import cn.jpush.api.push.model.audience.Audience;
+import cn.jpush.api.push.model.notification.AndroidNotification;
+import cn.jpush.api.push.model.notification.IosNotification;
+import cn.jpush.api.push.model.notification.Notification;
+import net.ys.constant.X;
+import org.apache.commons.lang.StringUtils;
+import org.apache.log4j.Logger;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+/**
+ * 极光推送工具
+ */
+
+public class PushUtil {
+
+    private static JPushClient jPushClient = new JPushClient(X.J_PUSH.MASTER_SECRET, X.J_PUSH.APP_KEY);
+
+    private static Logger logger = Logger.getLogger(PushUtil.class);
+
+    /**
+     * 推送给多个指定设备标识参数的用户
+     *
+     * @param registrationIds   设备标识
+     * @param notificationTitle 通知内容标题
+     * @param msgTitle          消息内容标题
+     * @param msgContent        消息内容
+     * @param extraParam        扩展字段
+     * @return
+     */
+    public static boolean sendToRegistrationId(String notificationTitle, String msgTitle, String msgContent, String extraParam, String... registrationIds) throws APIConnectionException, APIRequestException {
+        if (registrationIds == null || registrationIds.length == 0) {
+            return true;
+        }
+        PushPayload pushPayload = PushUtil.buildPushObjectRegistrationIds(registrationIds, notificationTitle, msgTitle, msgContent, extraParam);
+        PushResult pushResult = jPushClient.sendPush(pushPayload);
+        return pushResult.getResponseCode() == 200;
+    }
+
+    /**
+     * 推送给指定标签的用户
+     *
+     * @param tagName           设备标识
+     * @param notificationTitle 通知内容标题
+     * @param msgTitle          消息内容标题
+     * @param msgContent        消息内容
+     * @param extraParam        扩展字段
+     * @return
+     */
+    public static boolean sendToTag(String tagName, String notificationTitle, String msgTitle, String msgContent, String extraParam) throws APIConnectionException, APIRequestException {
+        PushPayload pushPayload = PushUtil.buildPushObjectByTag(tagName, notificationTitle, msgTitle, msgContent, extraParam);
+        PushResult pushResult = jPushClient.sendPush(pushPayload);
+        return pushResult.getResponseCode() == 200;
+    }
+
+    /**
+     * 发送给所有安卓用户
+     *
+     * @param notificationTitle 通知内容标题
+     * @param msgTitle          消息内容标题
+     * @param msgContent        消息内容
+     * @param extraParam        扩展字段
+     * @return
+     */
+    public static boolean sendToAllAndroid(String notificationTitle, String msgTitle, String msgContent, String extraParam) throws APIConnectionException, APIRequestException {
+        PushPayload pushPayload = PushUtil.buildPushObjectAllAndroid(notificationTitle, msgTitle, msgContent, extraParam);
+        PushResult pushResult = jPushClient.sendPush(pushPayload);
+        return pushResult.getResponseCode() == 200;
+    }
+
+    /**
+     * 发送给所有IOS用户
+     *
+     * @param notificationTitle 通知内容标题
+     * @param msgTitle          消息内容标题
+     * @param msgContent        消息内容
+     * @param extraParam        扩展字段
+     * @return
+     */
+    public static boolean sendToAllIos(String notificationTitle, String msgTitle, String msgContent, String extraParam) throws APIConnectionException, APIRequestException {
+        PushPayload pushPayload = PushUtil.buildPushObjectAllIos(notificationTitle, msgTitle, msgContent, extraParam);
+        PushResult pushResult = jPushClient.sendPush(pushPayload);
+        return pushResult.getResponseCode() == 200;
+    }
+
+    /**
+     * 发送给所有用户
+     *
+     * @param notification_title 通知内容标题
+     * @param msg_title          消息内容标题
+     * @param msg_content        消息内容
+     * @param extraParam         扩展字段
+     * @return 0推送失败，1推送成功
+     */
+    public static boolean sendToAll(String notification_title, String msg_title, String msg_content, String extraParam) throws APIConnectionException, APIRequestException {
+        PushPayload pushPayload = PushUtil.buildPushObjectAll(notification_title, msg_title, msg_content, extraParam);
+        PushResult pushResult = jPushClient.sendPush(pushPayload);
+        return pushResult.getResponseCode() == 200;
+    }
+
+    /**
+     * 所有用户，包括Android和ios
+     *
+     * @param notificationTitle
+     * @param msgTitle
+     * @param msgContent
+     * @param extraParam
+     * @return
+     */
+    public static PushPayload buildPushObjectAll(String notificationTitle, String msgTitle, String msgContent, String extraParam) {
+        return PushPayload.newBuilder()
+                .setPlatform(Platform.android_ios())
+                .setAudience(Audience.all())
+                .setNotification(Notification.newBuilder()
+                        .setAlert(notificationTitle)
+                        .addPlatformNotification(AndroidNotification.newBuilder()
+                                .setAlert(notificationTitle)
+                                .setTitle(notificationTitle)
+                                .addExtra("extra_key", extraParam)
+                                .build()
+                        ).addPlatformNotification(IosNotification.newBuilder()
+                                .setAlert(notificationTitle)
+                                .incrBadge(1)
+                                .setSound("sound.caf")
+                                .addExtra("extra_key", extraParam)
+                                .build()
+                        ).build()
+                ).setMessage(Message.newBuilder()
+                        .setMsgContent(msgContent)
+                        .setTitle(msgTitle)
+                        .addExtra("extra_key", extraParam)
+                        .build())
+                .setOptions(Options.newBuilder()
+                        .setApnsProduction(false)
+                        .setSendno(1)
+                        .setTimeToLive(86400)
+                        .build()
+                ).build();
+    }
+
+    /**
+     * 指定Tag的人
+     *
+     * @param tagName           标签名字
+     * @param notificationTitle 通知标题
+     * @param msgTitle          消息标题
+     * @param msgContent        消息体
+     * @param extraParam        附加信息
+     * @return
+     */
+    public static PushPayload buildPushObjectByTag(String tagName, String notificationTitle, String msgTitle, String msgContent, String extraParam) {
+
+        PushPayload.Builder pBuilder = PushPayload.newBuilder();
+        pBuilder.setPlatform(Platform.all());
+        pBuilder.setAudience(Audience.tag(tagName));
+
+        Notification.Builder nBuilder = Notification.newBuilder();
+        nBuilder.setAlert(notificationTitle);
+        nBuilder.addPlatformNotification(AndroidNotification.newBuilder().setAlert(notificationTitle).setTitle(notificationTitle).addExtra("extra_key", extraParam).build());
+        nBuilder.addPlatformNotification(IosNotification.newBuilder().setAlert(notificationTitle).incrBadge(1).setSound("sound.caf").addExtra("extra_key", extraParam).build());
+
+        pBuilder.setNotification(nBuilder.build());
+        pBuilder.setMessage(Message.newBuilder().setMsgContent(msgContent).setTitle(msgTitle).addExtra("extra_key", extraParam).build());
+        pBuilder.setOptions(Options.newBuilder().setApnsProduction(false).setSendno(1).setTimeToLive(86400).build());
+        PushPayload pushPayload = pBuilder.build();
+        return pushPayload;
+    }
+
+    /**
+     * 发送给多个指定的 registrationId
+     *
+     * @param registrationIds
+     * @param notificationTitle
+     * @param msgTitle
+     * @param msgContent
+     * @param extraParam
+     * @return
+     */
+    private static PushPayload buildPushObjectRegistrationIds(String[] registrationIds, String notificationTitle, String msgTitle, String msgContent, String extraParam) {
+        return PushPayload.newBuilder()
+                .setPlatform(Platform.all())
+                .setAudience(Audience.registrationId(registrationIds))
+                .setNotification(Notification.newBuilder()
+                        .addPlatformNotification(AndroidNotification.newBuilder()
+                                .setAlert(notificationTitle)
+                                .setTitle(notificationTitle)
+                                .addExtra("extra_key", extraParam)
+                                .build())
+                        .addPlatformNotification(IosNotification.newBuilder()
+                                .setAlert(notificationTitle)
+                                .incrBadge(1)
+                                .setSound("sound.caf")
+                                .addExtra("extra_key", extraParam)
+                                .build())
+                        .build())
+                .setMessage(Message.newBuilder()
+                        .setMsgContent(msgContent)
+                        .setTitle(msgTitle)
+                        .addExtra("extra_key", extraParam)
+                        .build())
+                .setOptions(Options.newBuilder()
+                        .setApnsProduction(false)
+                        .setSendno(1)
+                        .setTimeToLive(86400)
+                        .build())
+                .build();
+    }
+
+    /**
+     * 所有android用户
+     *
+     * @param notificationTitle
+     * @param msgTitle
+     * @param msgContent
+     * @param extraParam
+     * @return
+     */
+    private static PushPayload buildPushObjectAllAndroid(String notificationTitle, String msgTitle, String msgContent, String extraParam) {
+        return PushPayload.newBuilder()
+                .setPlatform(Platform.android())
+                .setAudience(Audience.all())
+                .setNotification(Notification.newBuilder()
+                        .addPlatformNotification(AndroidNotification.newBuilder()
+                                .setAlert(notificationTitle)
+                                .setTitle(notificationTitle)
+                                .addExtra("extra_key", extraParam)
+                                .build())
+                        .build()
+                ).setMessage(Message.newBuilder()
+                        .setMsgContent(msgContent)
+                        .setTitle(msgTitle)
+                        .addExtra("extra_key", extraParam)
+                        .build())
+                .setOptions(Options.newBuilder()
+                        .setApnsProduction(false)
+                        .setSendno(1)
+                        .setTimeToLive(86400)
+                        .build())
+                .build();
+    }
+
+    /**
+     * 所有苹果用户
+     *
+     * @param notificationTitle
+     * @param msgTitle
+     * @param msgContent
+     * @param extraParam
+     * @return
+     */
+    private static PushPayload buildPushObjectAllIos(String notificationTitle, String msgTitle, String msgContent, String extraParam) {
+        return PushPayload.newBuilder()
+                .setPlatform(Platform.ios())
+                .setAudience(Audience.all())
+                .setNotification(Notification.newBuilder()
+                        .addPlatformNotification(IosNotification.newBuilder()
+                                .setAlert(notificationTitle)
+                                .incrBadge(1)
+                                .setSound("sound.caf")
+                                .addExtra("extra_key", extraParam)
+                                .build())
+                        .build()
+                ).setMessage(Message.newBuilder()
+                        .setMsgContent(msgContent)
+                        .setTitle(msgTitle)
+                        .addExtra("extra_key", extraParam)
+                        .build())
+                .setOptions(Options.newBuilder()
+                        .setApnsProduction(false)
+                        .setSendno(1)
+                        .setTimeToLive(86400)
+                        .build())
+                .build();
+    }
+
+    /**
+     * 添加标签
+     *
+     * @param registrationId
+     * @param tag
+     */
+    public static boolean addTag(String registrationId, String... tag) {
+        try {
+            if (StringUtils.isBlank(registrationId)) {
+                return true;
+            }
+            Set<String> set = new HashSet<String>();
+            for (int i = 0; i < tag.length; i++) {
+                set.add(tag[i]);
+            }
+            DefaultResult result = jPushClient.updateDeviceTagAlias(registrationId, "", set, null);
+            return 200 == result.getResponseCode();
+        } catch (Exception e) {
+            logger.error(e);
+        }
+        return false;
+    }
+
+    /**
+     * 移除标签
+     *
+     * @param registrationId
+     * @param tag
+     */
+    public static boolean removeTag(String registrationId, String... tag) {
+        try {
+            if (StringUtils.isBlank(registrationId)) {
+                return true;
+            }
+            Set<String> set = new HashSet<String>();
+            for (int i = 0; i < tag.length; i++) {
+                set.add(tag[i]);
+            }
+            DefaultResult result = jPushClient.updateDeviceTagAlias(registrationId, "", null, set);
+            return 200 == result.getResponseCode();
+        } catch (Exception e) {
+            logger.error(e);
+        }
+        return false;
+    }
+
+    /**
+     * 获取标签
+     *
+     * @param registrationId
+     */
+    public static List<String> getTags(String registrationId) {
+        try {
+            TagAliasResult result = jPushClient.getDeviceTagAlias(registrationId);
+            return result.tags;
+        } catch (Exception e) {
+            logger.error(e);
+        }
+        return new ArrayList<String>();
+    }
+
+    public static void main(String[] args) throws APIConnectionException, APIRequestException {
+        sendToTag("nanmeiying", "not_title", "msg_title", "msg_content", "");
+        sendToRegistrationId("notificationTitle", "msgTitle", "msgContent", "{\"code\":\"1000\"}", "120c83f76003773eb00");
+    }
+}
