@@ -14,11 +14,13 @@ public enum GenResult {
 
     PARAMS_ERROR(1003, "请求参数错误"),
 
-    DB_ERROR(1004, "数据库异常"),
+    REQUEST_METHOD_ERROR(1004, "请求方式错误"),
 
-    NOT_LOGIN(1005, "未登录"),
+    DB_ERROR(1005, "数据库异常"),
 
-    NO_DATA_OR_INVALID(1006, "数据不存在或已过期，请刷新重试!"),
+    NOT_LOGIN(1006, "未登录"),
+
+    NO_DATA_OR_INVALID(1007, "数据不存在或已过期，请刷新重试!"),
 
     UNKNOWN_ERROR(9999, "未知异常"),;
 
