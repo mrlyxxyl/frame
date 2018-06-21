@@ -22,9 +22,9 @@ public class UserController {
     @Resource
     private UserService userService;
 
-    @RequestMapping(value = "users", method = RequestMethod.POST, headers = "Accept=application/json")
+    @RequestMapping(value = "users", method = RequestMethod.GET, headers = "Accept=application/json")
     @ResponseBody
-    @ApiOperation(httpMethod = "POST", response = UserResponse.class, responseContainer = "UserResponse", value = "用户列表")
+    @ApiOperation(httpMethod = "GET", response = UserResponse.class, responseContainer = "UserResponse", value = "用户列表")
     public Map<String, Object> users(@ApiParam(required = true, value = "页数", defaultValue = "1") @RequestParam(required = true, defaultValue = "1") int page,
                                      @ApiParam(required = true, value = "每页条数", defaultValue = "10") @RequestParam(required = true, value = "page_size", defaultValue = "10") int pageSize) {
         try {
