@@ -11,7 +11,7 @@ public class ApplicationSwaggerConfig {
     @Bean
     public Docket addUserDocket() {
         Docket docket = new Docket(DocumentationType.SWAGGER_2);
-        ApiInfo apiInfo = new ApiInfo("REST API", "API文档管理", "V3.8.0", "www.xy.net", "postmaster@xy.net", "license", "#");
+        ApiInfo apiInfo = new ApiInfo("REST API", "API文档管理", "V3.8.0", "www.xy.net", "postmaster@xy.net", "返回码", "/api/common/result/code");
         docket.apiInfo(apiInfo);
         return docket;
     }

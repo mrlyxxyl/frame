@@ -2,18 +2,30 @@ package net.ys.controller;
 
 import io.swagger.annotations.Api;
 import net.ys.bean.User;
+import net.ys.constant.GenResult;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
+import springfox.documentation.annotations.ApiIgnore;
 
 import java.util.*;
 
-@RestController
-@RequestMapping(value = "share", produces = {"application/json;charset=utf-8"})
-@Api(value = "share-api", description = "分享接口")
-public class ShareController {
+@Controller
+@RequestMapping(value = "common", produces = {"application/json;charset=utf-8"})
+@Api(value = "common", description = "公共接口")
+public class CommonController {
 
+    @ApiIgnore
+    @RequestMapping(value = "result/code", method = RequestMethod.GET)
+    public ModelAndView resultCode() {
+        ModelAndView mv = new ModelAndView("result_code");
+        GenResult[] results = GenResult.values();
+        mv.addObject("results", results);
+        return mv;
+    }
+
+    @ApiIgnore
     @RequestMapping(value = "free_show", method = RequestMethod.GET)
     public ModelAndView freeShow() {
         ModelAndView mv = new ModelAndView("show");

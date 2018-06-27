@@ -53,4 +53,20 @@ public enum GenResult {
         object.put("msg", message);
         return object.toString();
     }
+
+    public int getMsgCode() {
+        return msgCode;
+    }
+
+    public void setMsgCode(int msgCode) {
+        this.msgCode = msgCode;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
 }

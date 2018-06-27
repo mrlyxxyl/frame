@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75feac18-d80f-4fed-b677-524f84bc19a8" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/src/main/java/net/ys/controller/CommonController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/web/views/result_code.html" />
+      <change type="DELETED" beforePath="E:\idea_workspace\frame\api\src\main\java\net\ys\controller\ShareController.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/src/main/java/net/ys/common/ApplicationSwaggerConfig.java" afterPath="$PROJECT_DIR$/api/src/main/java/net/ys/common/ApplicationSwaggerConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/net/ys/constant/GenResult.java" afterPath="$PROJECT_DIR$/core/src/main/java/net/ys/constant/GenResult.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frame.iws" afterPath="$PROJECT_DIR$/frame.iws" />
     </list>
     <ignored path="frame.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1529916529847" ignored="false" />
+    <file path="/Dummy.txt" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1530063135754" ignored="false" />
     <file path="/top.jsp" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525393255062" ignored="false" />
     <file path="/MainController.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1520045673984" ignored="false" />
     <file path="/AdminController.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1520046035027" ignored="false" />
@@ -35,7 +40,7 @@
     <file path="$PROJECT_DIR$/../boot_order/web/WEB-INF/web.xml" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525662190189" ignored="false" />
     <file path="$PROJECT_DIR$/../boot_order/pom.xml" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525662190189" ignored="false" />
     <file path="$PROJECT_DIR$/../boot_order/src/main/java/com/yx/listener/SysListener.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525671611019" ignored="false" />
-    <file path="/fragment.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1529916526344" ignored="false" />
+    <file path="/fragment.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1530063191578" ignored="false" />
     <file path="/SysListener.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1527760835222" ignored="false" />
     <file path="$PROJECT_DIR$/../boot_order/src/main/java/com/yx/service/OneService.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525672628983" ignored="false" />
     <file path="/OneService.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1525672548027" ignored="false" />
@@ -94,6 +99,8 @@
     <file path="/UserController.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1529916274578" ignored="false" />
     <file path="$PROJECT_DIR$/../cert/api/src/main/java/net/ys/controller/SmsController.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1529575979498" ignored="false" />
     <file path="$PROJECT_DIR$/../cert/api/src/main/java/net/ys/controller/UserController.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1529916274578" ignored="false" />
+    <file path="$PROJECT_DIR$/../cert/api/src/main/java/net/ys/common/ApplicationSwaggerConfig.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1530063808371" ignored="false" />
+    <file path="$PROJECT_DIR$/../cert/api/src/main/java/net/ys/controller/CommonController.java" changelist="75feac18-d80f-4fed-b677-524f84bc19a8" time="1530063804498" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,64 +187,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Notification.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Notification.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/net/ys/constant/Notification.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="12" selection-start="87" selection-end="87" vertical-scroll-proportion="0.22446556">
+            <state line="7" column="12" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0">
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/web/WEB-INF/web.xml">
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="42" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="UserController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/src/main/java/net/ys/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="13" selection-start="597" selection-end="597" vertical-scroll-proportion="0.0">
+            <state line="20" column="0" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShareController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/net/ys/controller/ShareController.java">
+      <file leaf-file-name="SysFilter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/main/java/net/ys/filter/SysFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0">
+            <state line="11" column="34" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MQController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/net/ys/controller/MQController.java">
+      <file leaf-file-name="CommonController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/main/java/net/ys/controller/CommonController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0">
+            <state line="14" column="31" selection-start="463" selection-end="469" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GenResult.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="result_code.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/web/views/result_code.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="20.194445">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicationSwaggerConfig.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/main/java/net/ys/common/ApplicationSwaggerConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="119" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenResult.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/net/ys/constant/GenResult.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="39" selection-start="395" selection-end="404" vertical-scroll-proportion="0.0">
+            <state line="56" column="29" selection-start="1307" selection-end="1307" vertical-scroll-proportion="0.57575756">
               <folding />
             </state>
           </provider>
@@ -261,8 +268,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/msg/src/main/resources/application-mq.xml" />
-        <option value="$PROJECT_DIR$/msg/src/main/resources/config.properties" />
         <option value="$PROJECT_DIR$/msg/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/core/src/main/java/net/ys/constant/MsgKey.java" />
         <option value="$PROJECT_DIR$/msg/src/main/java/net/ys/controller/MQController.java" />
@@ -288,10 +293,12 @@
         <option value="$PROJECT_DIR$/core/src/main/java/net/ys/constant/X.java" />
         <option value="$PROJECT_DIR$/core/pom.xml" />
         <option value="$PROJECT_DIR$/api/src/main/java/net/ys/controller/GlobalController.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/net/ys/constant/GenResult.java" />
         <option value="$PROJECT_DIR$/api/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/api/src/main/java/net/ys/controller/UserController.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/net/ys/push/PushUtil.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/net/ys/controller/CommonController.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/net/ys/common/ApplicationSwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/net/ys/constant/GenResult.java" />
       </list>
     </option>
   </component>
@@ -430,7 +437,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="push" />
+              <option name="myItemId" value="constant" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -440,27 +447,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="constant" />
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -504,17 +491,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="net.ys.constant" />
       <recent name="net.ys.controller" />
+      <recent name="net.ys.constant" />
       <recent name="net.ys.service" />
       <recent name="net.ys.utils" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\idea_workspace\frame\api\web\views" />
       <recent name="E:\idea_workspace\frame\core\src\main\java\net\ys" />
       <recent name="E:\idea_workspace\frame\msg\src\main\resources" />
       <recent name="E:\idea_workspace\frame\msg\src\main\java\net\ys\service" />
       <recent name="E:\idea_workspace\frame\api\src\main\resources" />
-      <recent name="E:\idea_workspace\frame\admin\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.server">
@@ -631,21 +618,6 @@
             <option name="CONTEXT_PATH" value="/api" />
           </settings>
         </artifact>
-        <artifact name="admin">
-          <settings>
-            <option name="CONTEXT_PATH" value="/admin" />
-          </settings>
-        </artifact>
-        <artifact name="file">
-          <settings>
-            <option name="CONTEXT_PATH" value="/file" />
-          </settings>
-        </artifact>
-        <artifact name="msg">
-          <settings>
-            <option name="CONTEXT_PATH" value="/msg" />
-          </settings>
-        </artifact>
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_frame_2" />
@@ -708,9 +680,6 @@
       <method>
         <option name="BuildArtifacts" enabled="true">
           <artifact name="api" />
-          <artifact name="admin" />
-          <artifact name="file" />
-          <artifact name="msg" />
         </option>
       </method>
     </configuration>
@@ -827,7 +796,11 @@
       <created>1529916536792</created>
       <updated>1529916536792</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="update">
+      <created>1529916544281</created>
+      <updated>1529916544281</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -837,10 +810,9 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22979215" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3586207" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3375576" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29953918" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -853,10 +825,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298611" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19828641" sideWeight="0.6413793" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19828641" sideWeight="0.70046085" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3586207" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -922,18 +895,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/msg/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="30" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/net/ys/utils/ApplicationContextUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="24" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="28" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.0">
@@ -991,11 +952,6 @@
         <state line="15" column="29" selection-start="461" selection-end="461" vertical-scroll-proportion="0.573055" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/net/ys/filter/SysFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="19" selection-start="309" selection-end="309" vertical-scroll-proportion="0.03199052" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/main/java/net/ys/filter/LoginFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="19" selection-start="267" selection-end="267" vertical-scroll-proportion="0.032490976" />
@@ -1011,13 +967,6 @@
     <entry file="file://$PROJECT_DIR$/api/src/main/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="14" selection-start="354" selection-end="354" vertical-scroll-proportion="0.35866985" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/net/ys/common/ApplicationSwaggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="334" selection-end="334" vertical-scroll-proportion="0.28859857">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/pom.xml">
@@ -1044,13 +993,6 @@
         <state line="11" column="13" selection-start="183" selection-end="183" vertical-scroll-proportion="0.03206651" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/net/ys/constant/GenResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="39" selection-start="395" selection-end="404" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/web/WEB-INF/web.xml">
       <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
         <state />
@@ -1065,20 +1007,6 @@
       </provider>
       <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/net/ys/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="597" selection-end="597" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/net/ys/controller/ShareController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/src/main/java/net/ys/controller/MQController.java">
@@ -1111,7 +1039,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/net/ys/constant/Notification.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="12" selection-start="87" selection-end="87" vertical-scroll-proportion="0.22446556">
+        <state line="7" column="12" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/web/views/result_code.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="20.194445">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/net/ys/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/net/ys/filter/SysFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="34" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/net/ys/controller/CommonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="31" selection-start="463" selection-end="469" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/net/ys/common/ApplicationSwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="119" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/net/ys/constant/GenResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="29" selection-start="1307" selection-end="1307" vertical-scroll-proportion="0.57575756">
           <folding />
         </state>
       </provider>
