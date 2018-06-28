@@ -16,7 +16,7 @@ KE.lang = {
     preview : '预览',
     undo : '后退(Ctrl+Z)',
     redo : '前进(Ctrl+Y)',
-    cut : '剪切(Ctrl+X)',
+    cut : '剪切(Ctrl+Glc)',
     copy : '复制(Ctrl+C)',
     paste : '粘贴(Ctrl+V)',
     plainpaste : '粘贴为无格式文本',

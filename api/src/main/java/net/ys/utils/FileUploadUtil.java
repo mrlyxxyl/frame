@@ -19,9 +19,9 @@ public class FileUploadUtil {
     private static Random random = new Random();
 
     static {
-        String upload_url = PropertyUtil.get("upload_file_url");
+        String uploadUrl = PropertyUtil.get("upload_file_url");
         httpClient = HttpClients.createDefault();
-        httpPost = new HttpPost(upload_url);
+        httpPost = new HttpPost(uploadUrl);
     }
 
     /**

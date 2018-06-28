@@ -14,7 +14,7 @@ import cn.jpush.api.push.model.audience.Audience;
 import cn.jpush.api.push.model.notification.AndroidNotification;
 import cn.jpush.api.push.model.notification.IosNotification;
 import cn.jpush.api.push.model.notification.Notification;
-import net.ys.constant.X;
+import net.ys.constant.Glc;
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 
@@ -29,7 +29,7 @@ import java.util.Set;
 
 public class PushUtil {
 
-    private static JPushClient jPushClient = new JPushClient(X.J_PUSH.MASTER_SECRET, X.J_PUSH.APP_KEY);
+    private static JPushClient jPushClient = new JPushClient(Glc.JgPush.MASTER_SECRET, Glc.JgPush.APP_KEY);
 
     private static Logger logger = Logger.getLogger(PushUtil.class);
 

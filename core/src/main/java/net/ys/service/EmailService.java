@@ -263,11 +263,11 @@ public class EmailService {
                 while ((size = inputStream.read(buff)) != -1) {
                     out.write(buff, 0, size);
                 }
-                byte[] attach_bytes = out.toByteArray();
+                byte[] attachBytes = out.toByteArray();
                 inputStream.close();
                 out.close();
 
-                DataSource source = new ByteArrayDataSource(attach_bytes, connection.getContentType());
+                DataSource source = new ByteArrayDataSource(attachBytes, connection.getContentType());
                 attachmentBodyPart.setDataHandler(new DataHandler(source));
                 attachmentBodyPart.setFileName(MimeUtility.encodeText("优美.jpg", "utf-8", null));//解决中文乱码
                 multipart.addBodyPart(attachmentBodyPart);

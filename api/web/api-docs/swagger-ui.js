@@ -254,10 +254,10 @@ Handlebars.registerHelper('renderTextParam', function(param) {
     var defaultValue = isArray && Array.isArray(param.default) ? param.default.join('\n') : param.default;
 
     var dataVendorExtensions = Object.keys(param).filter(function(property) {
-        // filter X-data- properties
+        // filter Glc-data- properties
         return property.match(/^X-data-/i) !== null;
     }).reduce(function(result, property) {
-        // remove X- from property name, so it results in html attributes like data-foo='bar'
+        // remove Glc- from property name, so it results in html attributes like data-foo='bar'
         return result += ' ' + property.substring(2, property.length) + '=\'' + param[property] + '\'';
     }, '');
 
@@ -4552,7 +4552,7 @@ Operation.prototype.asCurl = function (args1, args2) {
 
   var results = [];
 
-  results.push('-X ' + this.method.toUpperCase());
+  results.push('-Glc ' + this.method.toUpperCase());
 
   if (obj.headers) {
     var key;
@@ -15289,13 +15289,13 @@ jQuery.ajaxTransport(function( options ) {
 					xhr.overrideMimeType( options.mimeType );
 				}
 
-				// X-Requested-With header
+				// Glc-Requested-With header
 				// For cross-domain requests, seeing as conditions for a preflight are
 				// akin to a jigsaw puzzle, we simply never set it to be sure.
 				// (it can always be set on a per-request basis or even using ajaxSetup)
 				// For same-domain requests, won't change header if already provided.
-				if ( !options.crossDomain && !headers["X-Requested-With"] ) {
-					headers["X-Requested-With"] = "XMLHttpRequest";
+				if ( !options.crossDomain && !headers["Glc-Requested-With"] ) {
+					headers["Glc-Requested-With"] = "XMLHttpRequest";
 				}
 
 				// Set headers
@@ -20842,7 +20842,7 @@ module.exports = new Type('tag:yaml.org,2002:timestamp', {
             // Octal number in ES6 starts with '0o'.
             // Binary number in ES6 starts with '0b'.
             if (number === '0') {
-                if (ch === 'x' || ch === 'X') {
+                if (ch === 'x' || ch === 'Glc') {
                     ++index;
                     return scanHexLiteral(start);
                 }
@@ -29948,11 +29948,11 @@ Request.prototype.abort = function(){
  *
  *      req.get('/')
  *        .set('Accept', 'application/json')
- *        .set('X-API-Key', 'foobar')
+ *        .set('Glc-API-Key', 'foobar')
  *        .end(callback);
  *
  *      req.get('/')
- *        .set({ Accept: 'application/json', 'X-API-Key': 'foobar' })
+ *        .set({ Accept: 'application/json', 'Glc-API-Key': 'foobar' })
  *        .end(callback);
  *
  * @param {String|Object} field

@@ -1,7 +1,7 @@
 package net.ys.filter;
 
 import net.ys.constant.GenResult;
-import net.ys.constant.X;
+import net.ys.constant.Glc;
 import net.ys.utils.Tools;
 
 import javax.servlet.*;
@@ -18,8 +18,8 @@ public final class SysFilter implements Filter {
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         boolean flag = validParams(request);
         if (!flag) {
-            response.setCharacterEncoding(X.ENCODING.U);
-            response.setContentType("application/json; charset=" + X.ENCODING.U);
+            response.setCharacterEncoding(Glc.encoding.U);
+            response.setContentType("application/json; charset=" + Glc.encoding.U);
             HttpServletResponse res = (HttpServletResponse) response;
             res.getWriter().write(GenResult.REQUEST_INVALID.toJson());
         } else {

@@ -1,6 +1,6 @@
 package net.ys.utils;
 
-import net.ys.constant.X;
+import net.ys.constant.Glc;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -12,14 +12,6 @@ import java.util.Date;
  * Date: 16-9-8
  */
 public class TimeUtil {
-
-    private static SimpleDateFormat yMd = new SimpleDateFormat("yyyy-MM-dd");
-
-    private static SimpleDateFormat yMdHm = new SimpleDateFormat("yyyy-MM-dd HH:mm");
-
-    private static SimpleDateFormat mdHm = new SimpleDateFormat("MM-dd HH:mm");
-
-    private static SimpleDateFormat yMdHms = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
     /**
      * 当前季度的开始时间
@@ -307,18 +299,19 @@ public class TimeUtil {
      */
     public static String alreadyPass(long time) {
         long pass = System.currentTimeMillis() - time;
-        if (pass <= X.TIME.SECOND_MILLISECOND) {//不足一秒
+        if (pass <= Glc.Time.SECOND_MILLISECOND) {//不足一秒
             pass += 2000;
         }
-        if (pass < X.TIME.MINUTE_MILLISECOND) {//几秒前
-            return (pass / X.TIME.SECOND_MILLISECOND) + "秒前";
-        } else if (pass < X.TIME.HOUR_MILLISECOND) {//分钟前
-            return (pass / X.TIME.MINUTE_MILLISECOND) + "分钟前";
-        } else if (pass < X.TIME.DAY_MILLISECOND) {
-            return (pass / X.TIME.HOUR_MILLISECOND) + "小时前";
-        } else if (pass < 6 * X.TIME.DAY_MILLISECOND) {//5天以内
-            return (pass / X.TIME.DAY_MILLISECOND) + "天前";
+        if (pass < Glc.Time.MINUTE_MILLISECOND) {//几秒前
+            return (pass / Glc.Time.SECOND_MILLISECOND) + "秒前";
+        } else if (pass < Glc.Time.HOUR_MILLISECOND) {//分钟前
+            return (pass / Glc.Time.MINUTE_MILLISECOND) + "分钟前";
+        } else if (pass < Glc.Time.DAY_MILLISECOND) {
+            return (pass / Glc.Time.HOUR_MILLISECOND) + "小时前";
+        } else if (pass < 6 * Glc.Time.DAY_MILLISECOND) {//5天以内
+            return (pass / Glc.Time.DAY_MILLISECOND) + "天前";
         } else {
+            SimpleDateFormat yMdHm = new SimpleDateFormat("yyyy-MM-dd HH:mm");
             return yMdHm.format(new Date(time));
         }
     }
@@ -344,8 +337,9 @@ public class TimeUtil {
                 timeStr = unitFormat(minute) + ":" + unitFormat(second);
             } else {
                 hour = minute / 60;
-                if (hour > 99)
+                if (hour > 99) {
                     return "99:59:59";
+                }
                 minute = minute % 60;
                 second = time - hour * 3600 - minute * 60;
                 timeStr = unitFormat(hour) + ":" + unitFormat(minute) + ":" + unitFormat(second);
@@ -356,10 +350,11 @@ public class TimeUtil {
 
     public static String unitFormat(int i) {
         String retStr;
-        if (i >= 0 && i < 10)
+        if (i >= 0 && i < 10) {
             retStr = "0" + Integer.toString(i);
-        else
+        } else {
             retStr = "" + i;
+        }
         return retStr;
     }
 
@@ -373,6 +368,7 @@ public class TimeUtil {
         if (time == 0) {
             return "";
         }
+        SimpleDateFormat yMdHms = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date date = new Date();
         date.setTime(time);
         return yMdHms.format(date);
@@ -388,6 +384,7 @@ public class TimeUtil {
         if (time == 0) {
             return "";
         }
+        SimpleDateFormat mdHm = new SimpleDateFormat("MM-dd HH:mm");
         Date date = new Date();
         date.setTime(time);
         return mdHm.format(date);
@@ -401,6 +398,7 @@ public class TimeUtil {
      */
     public static long toLong(String time) {
         try {
+            SimpleDateFormat yMdHms = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             return yMdHms.parse(time).getTime();
         } catch (ParseException e) {
         }
@@ -415,6 +413,7 @@ public class TimeUtil {
      */
     public static long toLongStart(String time) {
         try {
+            SimpleDateFormat yMd = new SimpleDateFormat("yyyy-MM-dd");
             Date date = yMd.parse(time);
             Calendar calendar = Calendar.getInstance();
             calendar.setTime(date);
@@ -436,6 +435,7 @@ public class TimeUtil {
      */
     public static long toLongEnd(String time) {
         try {
+            SimpleDateFormat yMd = new SimpleDateFormat("yyyy-MM-dd");
             Date date = yMd.parse(time);
             Calendar calendar = Calendar.getInstance();
             calendar.setTime(date);
@@ -455,6 +455,7 @@ public class TimeUtil {
      * @return
      */
     public static String genYmdHms() {
+        SimpleDateFormat yMdHms = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date date = new Date();
         return yMdHms.format(date);
     }
@@ -469,6 +470,7 @@ public class TimeUtil {
         if (time == 0) {
             return "";
         }
+        SimpleDateFormat yMd = new SimpleDateFormat("yyyy-MM-dd");
         Date date = new Date();
         date.setTime(time);
         return yMd.format(date);

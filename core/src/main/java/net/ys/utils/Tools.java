@@ -1,7 +1,7 @@
 package net.ys.utils;
 
+import net.ys.constant.Glc;
 import net.ys.constant.SysRegex;
-import net.ys.constant.X;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -97,7 +97,7 @@ public class Tools {
             if (str == null || "".equals(str.trim())) {
                 return "";
             }
-            byte[] bs = md5.digest((KEY_PREFIX + str).getBytes(X.ENCODING.U));
+            byte[] bs = md5.digest((KEY_PREFIX + str).getBytes(Glc.encoding.U));
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < bs.length; i++) {
                 sb.append(Character.forDigit((bs[i] >>> 4) & 0x0F, 16)).append(Character.forDigit(bs[i] & 0x0F, 16));

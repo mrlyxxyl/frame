@@ -1,6 +1,6 @@
 package net.ys.utils;
 
-import net.ys.constant.X;
+import net.ys.constant.Glc;
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
 
@@ -24,7 +24,7 @@ public class AesUtil {
      */
     public static String encryptAES(String content) {
         try {
-            byte[] byteContent = content.getBytes(X.ENCODING.U);
+            byte[] byteContent = content.getBytes(Glc.encoding.U);
             byte[] enCodeFormat = KEY.getBytes();
             SecretKeySpec secretKeySpec = new SecretKeySpec(enCodeFormat, "AES");
             byte[] initParam = IV_STRING.getBytes();
@@ -55,7 +55,7 @@ public class AesUtil {
             Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
             cipher.init(Cipher.DECRYPT_MODE, secretKey, ivParameterSpec);
             byte[] result = cipher.doFinal(encryptedBytes);
-            return new String(result, X.ENCODING.U);
+            return new String(result, Glc.encoding.U);
         } catch (Exception e) {
         }
         return "";

@@ -36,7 +36,7 @@ public class CommonController {
         mv.addObject("number", 44444.44446f);
         mv.addObject("td", 0);
 
-        Map<String, Object> map = new HashMap<String, Object>();
+        Map<String, Object> map = new HashMap<String, Object>(2);
         map.put("name", "name");
         map.put("age", 25);
         mv.addObject("map", map);
@@ -52,7 +52,7 @@ public class CommonController {
 
         mv.addObject("array", array);
 
-        Map<String, Object> root = new HashMap<String, Object>();
+        Map<String, Object> root = new HashMap<String, Object>(1);
 
         User user = new User();
         user.setId(1);

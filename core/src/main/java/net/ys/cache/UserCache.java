@@ -18,7 +18,7 @@ import redis.clients.jedis.exceptions.JedisConnectionException;
 @Repository
 public class UserCache {
 
-    private static final MessagePack msgPack = new MessagePack();
+    private static final MessagePack MESSAGE_PACK = new MessagePack();
 
     public boolean saveUsers(final User... users) {
         RedsRunner<Boolean> rr = new RedsRunner<Boolean>() {
@@ -28,7 +28,7 @@ public class UserCache {
                     if (users.length > 0) {
                         Pipeline pipeline = jedis.pipelined();
                         for (User user : users) {
-                            pipeline.set(msgPack.write(CacheKey.USER_KEY + user.getId()), msgPack.write(user));
+                            pipeline.set(MESSAGE_PACK.write(CacheKey.USER_KEY + user.getId()), MESSAGE_PACK.write(user));
                         }
                         pipeline.sync();
                         return true;

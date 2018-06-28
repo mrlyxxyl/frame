@@ -39,8 +39,8 @@
 
 	var data = new google.visualization.DataTable();
 
-	// add X label
-	data.addColumn('string','X labels');
+	// add Glc label
+	data.addColumn('string','Glc labels');
 
 	var a = new Array();
 

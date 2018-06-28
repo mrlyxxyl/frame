@@ -15,7 +15,7 @@ import redis.clients.jedis.exceptions.JedisConnectionException;
 @Repository
 public class CommonCache {
 
-    private static final MessagePack msgPack = new MessagePack();
+    private static final MessagePack MESSAGE_PACK = new MessagePack();
 
     /**
      * 获取访问次数

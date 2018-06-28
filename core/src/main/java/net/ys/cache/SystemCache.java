@@ -20,7 +20,7 @@ import java.util.List;
 @Repository
 public class SystemCache {
 
-    private static final MessagePack msgPack = new MessagePack();
+    private static final MessagePack MESSAGE_PACK = new MessagePack();
 
     public boolean addSysEnums(final List<SysEnum> enums) {
         RedsRunner<Boolean> rr = new RedsRunner<Boolean>() {
@@ -29,7 +29,7 @@ public class SystemCache {
                 try {
                     Pipeline pipeline = jedis.pipelined();
                     for (SysEnum sysEnum : enums) {
-                        pipeline.zadd(msgPack.write(CacheKey.SYS_ENUM_KEY), sysEnum.getCode(), msgPack.write(sysEnum));
+                        pipeline.zadd(MESSAGE_PACK.write(CacheKey.SYS_ENUM_KEY), sysEnum.getCode(), MESSAGE_PACK.write(sysEnum));
                     }
                     pipeline.sync();
                     return true;
