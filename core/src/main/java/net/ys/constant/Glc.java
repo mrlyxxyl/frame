@@ -8,13 +8,13 @@ package net.ys.constant;
 public interface Glc {
 
     interface Time {
-        int DAY_SECOND = 24 * 60 * 60;
-        int HOUR_SECOND = 60 * 60;
-        int MINUTE = 60;
-        int DAY_MILLISECOND = 24 * 60 * 60 * 1000;
-        int HOUR_MILLISECOND = 60 * 60 * 1000;
-        int MINUTE_MILLISECOND = 60 * 1000;
-        int SECOND_MILLISECOND = 1000;
+        int SECOND_DAY = 24 * 60 * 60;
+        int SECOND_HOUR = 60 * 60;
+        int SECOND_MINUTE = 60;
+        int MILLISECOND_DAY = 24 * 60 * 60 * 1000;
+        int MILLISECOND_HOUR = 60 * 60 * 1000;
+        int MILLISECOND_MINUTE = 60 * 1000;
+        int MILLISECOND_SECOND = 1000;
     }
 
     /**
@@ -28,7 +28,7 @@ public interface Glc {
     /**
      * 编码
      */
-    interface encoding {
+    interface Code {
         String U = "UTF-8";
         String I = "ISO8859-1";
     }

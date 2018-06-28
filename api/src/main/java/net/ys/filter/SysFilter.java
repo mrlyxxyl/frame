@@ -18,8 +18,8 @@ public final class SysFilter implements Filter {
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         boolean flag = validParams(request);
         if (!flag) {
-            response.setCharacterEncoding(Glc.encoding.U);
-            response.setContentType("application/json; charset=" + Glc.encoding.U);
+            response.setCharacterEncoding(Glc.Code.U);
+            response.setContentType("application/json; charset=" + Glc.Code.U);
             HttpServletResponse res = (HttpServletResponse) response;
             res.getWriter().write(GenResult.REQUEST_INVALID.toJson());
         } else {
