@@ -25,9 +25,9 @@ public class AesUtil {
     public static String encryptAES(String content) {
         try {
             byte[] byteContent = content.getBytes(Glc.Code.U);
-            byte[] enCodeFormat = KEY.getBytes();
+            byte[] enCodeFormat = KEY.getBytes(Glc.Code.U);
             SecretKeySpec secretKeySpec = new SecretKeySpec(enCodeFormat, "AES");
-            byte[] initParam = IV_STRING.getBytes();
+            byte[] initParam = IV_STRING.getBytes(Glc.Code.U);
             IvParameterSpec ivParameterSpec = new IvParameterSpec(initParam);
             Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
             cipher.init(Cipher.ENCRYPT_MODE, secretKeySpec, ivParameterSpec);
@@ -48,9 +48,9 @@ public class AesUtil {
         try {
             BASE64Decoder decoder = new BASE64Decoder();
             byte[] encryptedBytes = decoder.decodeBuffer(content);
-            byte[] enCodeFormat = KEY.getBytes();
+            byte[] enCodeFormat = KEY.getBytes(Glc.Code.U);
             SecretKeySpec secretKey = new SecretKeySpec(enCodeFormat, "AES");
-            byte[] initParam = IV_STRING.getBytes();
+            byte[] initParam = IV_STRING.getBytes(Glc.Code.U);
             IvParameterSpec ivParameterSpec = new IvParameterSpec(initParam);
             Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
             cipher.init(Cipher.DECRYPT_MODE, secretKey, ivParameterSpec);
