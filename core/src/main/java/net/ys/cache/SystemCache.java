@@ -1,11 +1,11 @@
 package net.ys.cache;
 
+import net.sf.json.JSONObject;
 import net.ys.bean.SysEnum;
 import net.ys.constant.CacheKey;
 import net.ys.storage.RedsExecutor;
 import net.ys.storage.RedsRunner;
 import net.ys.storage.RedsServer;
-import org.msgpack.MessagePack;
 import org.springframework.stereotype.Repository;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.Pipeline;
@@ -20,8 +20,6 @@ import java.util.List;
 @Repository
 public class SystemCache {
 
-    private static final MessagePack MESSAGE_PACK = new MessagePack();
-
     public boolean addSysEnums(final List<SysEnum> enums) {
         RedsRunner<Boolean> rr = new RedsRunner<Boolean>() {
             @Override
@@ -29,7 +27,7 @@ public class SystemCache {
                 try {
                     Pipeline pipeline = jedis.pipelined();
                     for (SysEnum sysEnum : enums) {
-                        pipeline.zadd(MESSAGE_PACK.write(CacheKey.SYS_ENUM_KEY), sysEnum.getCode(), MESSAGE_PACK.write(sysEnum));
+                        pipeline.zadd(CacheKey.SYS_ENUM_KEY, sysEnum.getCode(), JSONObject.fromObject(sysEnum).toString());
                     }
                     pipeline.sync();
                     return true;

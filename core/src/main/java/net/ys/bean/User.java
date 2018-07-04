@@ -1,17 +1,12 @@
 package net.ys.bean;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import org.msgpack.annotation.Message;
-
 import java.io.Serializable;
 
 /**
  * 用户表
  */
-@Message
 public class User implements Serializable {
 
-    @JsonProperty(value = "uid")
     private long id;    //主键
 
     private String name;    //用户昵称

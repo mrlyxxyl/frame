@@ -7,7 +7,7 @@ package net.ys.constant;
  */
 public interface CacheKey {
 
-    String SYS_ENUM_KEY = "SYS_ENUM";//系统枚举变量
+    String SYS_ENUM_KEY = "SYS_ENUM:";//系统枚举变量
 
-    String USER_KEY = "USER_"; //用户数据
+    String USER_KEY = "USER:"; //用户数据
 }

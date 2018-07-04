@@ -5,11 +5,10 @@ import net.ys.constant.Glc;
 import net.ys.utils.Tools;
 
 import javax.servlet.*;
-import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebFilter(urlPatterns = "/api/*")
+//@WebFilter(urlPatterns = "/api/*")
 public final class SysFilter implements Filter {
 
     public void init(FilterConfig filterConfig) throws ServletException {

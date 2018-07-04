@@ -1,17 +1,12 @@
 package net.ys.bean;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import org.msgpack.annotation.Message;
-
 import java.io.Serializable;
 
 /**
  * 系统枚举表
  */
-@Message
 public class SysEnum implements Serializable {
 
-    @JsonProperty(value = "eid")
     private int id;    //主键
 
     private String name;    //枚举名称

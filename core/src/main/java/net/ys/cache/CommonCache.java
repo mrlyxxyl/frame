@@ -3,7 +3,6 @@ package net.ys.cache;
 import net.ys.storage.RedsExecutor;
 import net.ys.storage.RedsRunner;
 import net.ys.storage.RedsServer;
-import org.msgpack.MessagePack;
 import org.springframework.stereotype.Repository;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.exceptions.JedisConnectionException;
@@ -14,8 +13,6 @@ import redis.clients.jedis.exceptions.JedisConnectionException;
  */
 @Repository
 public class CommonCache {
-
-    private static final MessagePack MESSAGE_PACK = new MessagePack();
 
     /**
      * 获取访问次数

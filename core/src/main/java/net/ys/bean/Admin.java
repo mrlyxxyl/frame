@@ -1,10 +1,7 @@
 package net.ys.bean;
 
-import org.msgpack.annotation.Message;
-
 import java.io.Serializable;
 
-@Message
 public class Admin implements Serializable {
 
     private int id;    //

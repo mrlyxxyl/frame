@@ -1,15 +1,16 @@
 package net.ys.cache;
 
+import net.sf.json.JSONObject;
 import net.ys.storage.RedsExecutor;
 import net.ys.storage.RedsRunner;
 import net.ys.storage.RedsServer;
 import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.lang.StringUtils;
 import org.msgpack.MessagePack;
 import org.springframework.stereotype.Repository;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.exceptions.JedisConnectionException;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -21,7 +22,8 @@ import java.util.Set;
 @Repository
 public class BaseCache {
 
-    private static final MessagePack MESSAGE_PACK = new MessagePack();
+
+    MessagePack messagePack = new MessagePack();
 
     /**
      * k-v
@@ -35,8 +37,14 @@ public class BaseCache {
             @Override
             public Boolean run(Jedis jedis) throws JedisConnectionException {
                 try {
-                    return "OK".equals(jedis.set(MESSAGE_PACK.write(key), MESSAGE_PACK.write(obj)));
-                } catch (IOException e) {
+                    String value;
+                    if (obj instanceof String) {
+                        value = String.valueOf(obj);
+                    } else {
+                        value = JSONObject.fromObject(obj).toString();
+                    }
+                    return "OK".equals(jedis.set(key, value));
+                } catch (Exception e) {
                 }
                 return false;
             }
@@ -57,11 +65,14 @@ public class BaseCache {
             @Override
             public T run(Jedis jedis) throws JedisConnectionException {
                 try {
-                    byte[] data = jedis.get(MESSAGE_PACK.write(key));
-                    if (data != null) {
-                        return MESSAGE_PACK.read(data, clazz);
+                    String val = jedis.get(key);
+                    if (StringUtils.isNotBlank(val)) {
+                        if (clazz == String.class) {
+                            return (T) val;
+                        }
+                        return (T) JSONObject.toBean(JSONObject.fromObject(val), clazz);
                     }
-                } catch (IOException e) {
+                } catch (Exception e) {
                 }
                 return null;
             }
@@ -80,7 +91,7 @@ public class BaseCache {
             @Override
             public Boolean run(Jedis jedis) throws JedisConnectionException {
                 try {
-                    return jedis.del(MESSAGE_PACK.write(key)) > 0;
+                    return jedis.del(key) > 0;
                 } catch (Exception e) {
                 }
                 return false;
@@ -101,8 +112,14 @@ public class BaseCache {
             @Override
             public Boolean run(Jedis jedis) throws JedisConnectionException {
                 try {
-                    return jedis.zadd(MESSAGE_PACK.write(key), score, MESSAGE_PACK.write(obj)) > 0;
-                } catch (IOException e) {
+                    String value;
+                    if (obj instanceof String) {
+                        value = String.valueOf(obj);
+                    } else {
+                        value = JSONObject.fromObject(obj).toString();
+                    }
+                    return jedis.zadd(key, score, value) > 0;
+                } catch (Exception e) {
                 }
                 return false;
             }
@@ -122,9 +139,16 @@ public class BaseCache {
             @Override
             public Boolean run(Jedis jedis) throws JedisConnectionException {
                 try {
-                    jedis.zremrangeByScore(MESSAGE_PACK.write(key), score, score);
-                    return jedis.zadd(MESSAGE_PACK.write(key), score, MESSAGE_PACK.write(obj)) > 0;
-                } catch (IOException e) {
+                    jedis.zremrangeByScore(key, score, score);
+
+                    String value;
+                    if (obj instanceof String) {
+                        value = String.valueOf(obj);
+                    } else {
+                        value = JSONObject.fromObject(obj).toString();
+                    }
+                    return jedis.zadd(key, score, value) > 0;
+                } catch (Exception e) {
                 }
                 return false;
             }
@@ -143,13 +167,16 @@ public class BaseCache {
             @Override
             public T run(Jedis jedis) throws JedisConnectionException {
                 try {
-                    Set<byte[]> data = jedis.zrangeByScore(MESSAGE_PACK.write(key), score, score);
+                    Set<String> data = jedis.zrangeByScore(key, score, score);
                     if (data.size() > 0) {
-                        for (byte[] bytes : data) {
-                            return MESSAGE_PACK.read(bytes, clazz);
+                        for (String val : data) {
+                            if (clazz == String.class) {
+                                return (T) val;
+                            }
+                            return (T) JSONObject.toBean(JSONObject.fromObject(val), clazz);
                         }
                     }
-                } catch (IOException e) {
+                } catch (Exception e) {
                 }
                 return null;
             }
@@ -169,13 +196,17 @@ public class BaseCache {
             public List<T> run(Jedis jedis) throws JedisConnectionException {
                 List<T> list = new ArrayList<T>();
                 try {
-                    Set<byte[]> data = jedis.zrangeByScore(MESSAGE_PACK.write(key), min, max, offset, count);
+                    Set<String> data = jedis.zrangeByScore(key, min, max, offset, count);
                     if (CollectionUtils.isNotEmpty(data)) {
-                        for (byte[] bytes : data) {
-                            list.add(MESSAGE_PACK.read(bytes, clazz));
+                        for (String val : data) {
+                            if (clazz == String.class) {
+                                list.add((T) val);
+                            } else {
+                                list.add((T) JSONObject.toBean(JSONObject.fromObject(val), clazz));
+                            }
                         }
                     }
-                } catch (IOException e) {
+                } catch (Exception e) {
                 }
                 return list;
             }
@@ -195,13 +226,17 @@ public class BaseCache {
             public List<T> run(Jedis jedis) throws JedisConnectionException {
                 List<T> list = new ArrayList<T>();
                 try {
-                    Set<byte[]> data = jedis.zrevrangeByScore(MESSAGE_PACK.write(key), max, min, offset, count);
+                    Set<String> data = jedis.zrevrangeByScore(key, max, min, offset, count);
                     if (CollectionUtils.isNotEmpty(data)) {
-                        for (byte[] bytes : data) {
-                            list.add(MESSAGE_PACK.read(bytes, clazz));
+                        for (String val : data) {
+                            if (clazz == String.class) {
+                                list.add((T) val);
+                            } else {
+                                list.add((T) JSONObject.toBean(JSONObject.fromObject(val), clazz));
+                            }
                         }
                     }
-                } catch (IOException e) {
+                } catch (Exception e) {
                 }
                 return list;
             }
@@ -220,7 +255,7 @@ public class BaseCache {
             @Override
             public Long run(Jedis jedis) throws JedisConnectionException {
                 try {
-                    return jedis.zcard(MESSAGE_PACK.write(key));
+                    return jedis.zcard(key);
                 } catch (Exception e) {
                 }
                 return 0L;
@@ -241,7 +276,7 @@ public class BaseCache {
             @Override
             public Boolean run(Jedis jedis) throws JedisConnectionException {
                 try {
-                    return jedis.zremrangeByScore(MESSAGE_PACK.write(key), score, score) > 0;
+                    return jedis.zremrangeByScore(key, score, score) > 0;
                 } catch (Exception e) {
                 }
                 return false;
